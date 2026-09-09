@@ -1,0 +1,22 @@
+c:\software\react-tutorial
+
+1st time
+npm install -g create-vite
+npm create vite@latest my-react-app -- --template react
+
+not 1st time
+npm run dev
+http://localhost:5173/
+
+ui-payments-v8
+C:\software\react-tutorial\ui-payments-v8
+mock json data from backend Java
+public/*.html.json
+public/business/*.html.json
+public/protoversion/<page>.html-<variant>.json
+
+http://localhost:3000/ui/v8/payments/auto-pay.html
+//this is simplest page to start
+http://localhost:3000/ui/v8/payments/pay-now.html
+
+

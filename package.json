@@ -1,0 +1,92 @@
+{
+  "name": "ui-payments-v8",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/ui/v8/payments/",
+  "dependencies": {
+    "@cox/core-ui8": "7.0.1551",
+    "@cox/ui-theme": "7.0.88",
+    "@cox/ui-tokens": "7.0.88",
+    "axios": "^1.6.7",
+    "bootstrap": "^5.3.2",
+    "dompurify": "^3.2.3",
+    "moment": "^2.30.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "react-scripts": "5.0.1",
+    "react-tooltip": "^5.26.4",
+    "typescript": "^4.9.5",
+    "uuid": "^11.1.0",
+    "web-vitals": "^2.1.4",
+    "xml2js": "^0.6.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && node build.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build",
+    "format": "prettier --write ."
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:storybook/recommended"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "1.3.3",
+    "@craco/craco": "^7.1.0",
+    "@storybook/addon-essentials": "8.6.13",
+    "@storybook/addon-interactions": "8.6.13",
+    "@storybook/addon-links": "8.6.13",
+    "@storybook/addon-onboarding": "8.6.13",
+    "@storybook/blocks": "8.6.13",
+    "@storybook/preset-create-react-app": "8.6.13",
+    "@storybook/react": "8.6.13",
+    "@storybook/react-webpack5": "8.6.13",
+    "@storybook/test": "8.6.13",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.80",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "eslint-plugin-storybook": "^0.8.0",
+    "prettier": "^3.3.2",
+    "prop-types": "15.8.1",
+    "storybook": "8.6.13",
+    "webpack": "5.91.0",
+    "webpack-version-file": "^0.1.7"
+  },
+  "pnpm": {
+    "overrides": {
+      "@cox/ui-tokens": "7.0.88",
+      "@cox/ui-theme": "7.0.88"
+    },
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "core-js",
+      "core-js-pure",
+      "esbuild",
+      "styled-components"
+    ]
+  }
+}

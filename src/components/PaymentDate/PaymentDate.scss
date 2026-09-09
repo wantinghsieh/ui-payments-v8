@@ -1,0 +1,42 @@
+input[type="date"] {
+  height: 33px;
+  line-height: 31px;
+  border-radius: 3px;
+  border: 1px solid var(--pay-color-black);
+  background-color: var(--pay-color-white);
+  padding: 0 10px;
+}
+
+// Hide native calendar icon
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+input[type="date"]::-moz-calendar-picker-indicator { display: none; }
+
+.date-picker-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.date-picker { padding-right: 30px; }
+
+.calendar-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#other-date-txt-error { margin-left: 42px; }
+
+.other-date-label { flex-wrap: wrap; }
+
+@media (max-width: 495px) {
+  .other-date-label > span { margin-bottom: 10px; }
+}

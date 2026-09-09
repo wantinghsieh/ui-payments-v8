@@ -1,0 +1,252 @@
+.add-payment-wrapper {
+  background-color: var(--background-muted-2);
+
+  .add-payment-method-header {
+    font-weight: var(--cox-text-title4-bold-font-weight, var(--pay-font-weight-bold)) !important;
+  }
+}
+
+.add-payment-form-container {
+  width: 100% !important;
+  align-items: normal !important;
+  margin-bottom: 0 !important;
+}
+
+.button-group-container {
+  flex-direction: row !important;
+}
+
+.line {
+  border-bottom: 1px solid var(--color-neutral-300);
+  opacity: 0.25;
+  display: block;
+  width: 100%;
+  margin-bottom: 24px !important;
+}
+
+.tooltip-icon-image {
+  margin-top: -10px;
+}
+
+.credit-card-container {
+  .form-container {
+    gap: 1rem !important;
+
+    form {
+      gap: 0.5rem !important;
+    }
+  }
+
+  .subheading {
+    font-size: var(--pay-font-size-lg) !important;
+    font-style: normal;
+    font-weight: var(--pay-font-weight-medium) !important;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  // Applied to form rows that should line up flush with the tabs / heading.
+  // Pulls the row outward by half-gutter so its columns' content edge
+  // aligns with the parent edge while col padding (and the gap between
+  // adjacent fields like Card # ↔ CVV) is preserved.
+  .card-form-row {
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
+  }
+
+  .label-title {
+    font-weight: var(--cox-text-title4-bold-font-weight, var(--pay-font-weight-bold)) !important;
+  }
+
+  .icon--close {
+    display: none !important;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+  }
+
+  .form-footer {
+    align-items: center !important;
+
+    .review-buttons {
+      padding: 0 !important;
+    }
+  }
+}
+
+// core-ui8 applies the passed className to the field wrapper div; Bootstrap's
+// form-control then adds border/padding/background to that wrapper causing double-styling.
+.credit-card-container .name-on-cc.form-control,
+.credit-card-container .cvv-number.form-control,
+.credit-card-container .countryZip.form-control,
+.credit-card-container .form-field-and-numbers.form-control {
+  border: none;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+// In core-ui8 v7 the card-number class landed on the <input>; in v5 it lands on
+// the form-field-and-numbers wrapper. globals.scss .card-number sets width:110% and
+// the card sprite background — reset both so the wrapper stays within its grid column.
+.credit-card-container .form-field-and-numbers.card-number {
+  width: 100%;
+  background-image: none;
+}
+
+#ccYear .required-label {
+  display: none;
+}
+
+.add-payment-form-container .status-banner .banner-link {
+  display: none !important;
+}
+
+.form-container .form-footer.align-items-left {
+  align-items: flex-start !important;
+}
+
+.setup-saved-mop-container,
+.bank-account-container {
+  margin-bottom: 40px;
+}
+
+.setup-saved-mop-container {
+
+  // ── Card shell ───────────────────────────────────────────────
+  .form-radio-button .card {
+    border-radius: var(--pay-radius-xl); // 20px
+    border: 2px solid var(--pay-color-border); // #B9C9D2 unselected
+    background: var(--pay-color-white);
+    align-self: stretch;
+
+    &.card-default-wrapper {
+      border-color: var(--pay-color-info); // selected → blue
+    }
+  }
+
+  // ── Card body — matches master: 2em top / 1rem sides / 1em bottom (same as .payment-container .card-body)
+  .saved-mop-content {
+    padding: 2em 1rem 1em;
+    gap: 12px;
+  }
+
+  .saved-mop-details a {
+    text-decoration: none;
+  }
+
+  label {
+    margin-bottom: 0;
+  }
+
+  .form-radio-button .custom-radio {
+    width: 26px;
+    height: 26px;
+    margin-top: 0;
+    padding: 6px;
+    margin-right: 8px;
+    border-radius: 50%;
+
+    &:hover:not(:disabled) {
+      outline: 1px solid var(--pay-color-info);
+      outline-offset: 3px;
+    }
+
+    &.checked {
+      background-image: url(https://webcdn.cox.com/content/dam/cox/common/icons/ui_components/white-check-mark.svg);
+      background-size: 12px 9.6px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    &.disabled {
+      border: 2px solid var(--pay-color-text-muted);
+    }
+  }
+
+  .radio-button-title,
+  input[type="radio"]:not([disabled="disabled"])+label:before {
+    display: none !important;
+  }
+
+  .grey-text {
+    color: var(--pay-color-text-muted);
+  }
+
+  .tooltip-disabled-mop {
+    margin-left: 12px;
+  }
+
+  .success-msg-container {
+    margin-bottom: 16px;
+  }
+}
+
+.modal-dialog.basic-modal {
+  max-width: 1200px !important;
+  width: 1200px !important;
+}
+
+.add-payment-form-container .form-basic-dropdown .input {
+  height: 68px;
+}
+
+// Mobile
+@media screen and (max-width: 767px) {
+  .button-group-container {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.25rem !important;
+
+    .button-container {
+      display: block !important;
+    }
+  }
+
+  #payment-setup .button-group {
+    display: block !important;
+
+    .custom-secondary-btn .secondary {
+      margin-right: 0 !important;
+    }
+
+    .primary {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      margin-top: var(--pay-space-3);
+    }
+  }
+
+  .modal-dialog.basic-modal {
+    max-width: 90% !important;
+    width: 90% !important;
+  }
+
+  #ccYear .form-label {
+    display: none !important;
+  }
+
+  .setup-saved-mop-container .saved-mop-details {
+    padding-left: 60px;
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1024px) {
+  .modal-dialog.basic-modal {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}

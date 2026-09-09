@@ -1,0 +1,39 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "prepaid-automatic-recharge",
+    "templateName": "PrepaidAutomaticRechargeTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "setup-mop",
+        "headerText": "Set up EasyPay automatic payments",
+        "oktaLogin": true,
+        "isPrepaid": true,
+        "navigateTo": "/resaccount/prepaid-home.html",
+        "alerts": [
+          {
+            "message": "<span data-automation-id=\"payment-restriction-alert-text\">We're sorry for the inconvenience, but online payments via credit or debit cards are not enabled on your account. Please make a payment in cash at any <a href=\"/aboutus/contact-us/cox-centers.html\">Cox Solutions Store</a>.<br> <br> For more information, please <a href=\"/residential/contactus.html\" class=\"chat-trigger\">chat with us</a>.</span>",
+            "iconType": "error"
+          }
+        ],
+        "paymentRestrictions": {
+          "restrictBankPayment": true,
+          "restrictCardPayment": true,
+          "allPaymentRestricted": false
+        },
+        "savedMop": null
+      }
+    }
+  }
+}

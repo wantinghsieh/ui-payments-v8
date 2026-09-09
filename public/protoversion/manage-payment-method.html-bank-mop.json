@@ -1,0 +1,57 @@
+{
+ "udo": {
+  "categorySubscribed": [
+   "Internet"
+  ]
+ },
+ "page": {
+  "pageName": "manage-payment-method",
+  "templateName": "ManagePaymentMethodTemplate",
+  "displayHeader": true,
+  "displayFooter": true,
+  "minimalHeader": false,
+  "minimalFooter": false,
+  "chatContent": "Care",
+  "displayChat": true,
+  "sections": {
+   "displayLeftNav": true,
+   "payment": {
+    "pageName": "manage-payment-method",
+    "customerType": "residential",
+    "oktaLogin": true,
+    "headerText": "Manage payment methods",
+    "secondaryHeaderText": "",
+    "navigateTo": "/resaccount/home.html",
+    "savedMop": [
+     {
+      "mopId": "1",
+      "type": "BANK",
+      "name": "Wells Fargo ending in 6576",
+      "classType": "bank",
+      "lastFourDigits": "6576",
+      "paymentProviderId": "102000076",
+      "isDefaultMop": "true"
+     },
+     {
+      "mopId": "2",
+      "type": "BANK",
+      "name": "Chase ending in 6463",
+      "classType": "bank",
+      "lastFourDigits": "6463",
+      "paymentProviderId": "102001017",
+      "isDefaultMop": "false"
+     },
+     {
+      "mopId": "3",
+      "type": "BANK",
+      "name": "Bank of America ending in 3254",
+      "classType": "bank",
+      "lastFourDigits": "3254",
+      "isDefaultMop": "false",
+      "paymentProviderId": "051000017"
+     }
+    ]
+   }
+  }
+ }
+}

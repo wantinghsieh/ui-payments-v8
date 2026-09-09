@@ -1,0 +1,51 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "future-payment-confirm",
+    "templateName": "FuturePayConfirmTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "error",
+        "customerType": "residential",
+        "oktaLogin": true,
+        "headerText": "Future payment failed",
+        "description": "You will be charged on your monthly payment due date.",
+        "isprepaidCustomer": false,
+        "navigateTo": "/ibill/home.html",
+        "udoVariables": {
+          "channel": "cox:res:payments",
+          "pageName": "cox:res:payments:future-payment-error",
+          "pageType": "payments",
+          "subSection": "cox:res:payments",
+          "businessUnit": "res:payments",
+          "purchaseStep": "payments",
+          "visitorLoginStatus": "link-based-auth",
+          "amountDue": null,
+          "amountPastDue": null,
+          "amountAttempted": null,
+          "amountPaid": null,
+          "eventNames": null,
+          "selfHelpName": null,
+          "formError": null
+        },
+        "errorMessages": [
+          "Sorry, we were unable to process your request. Please check your payment details and try again. <a href=/residential/contactus.html>Chat with us</a>"
+        ],
+        "coxAppContent": {
+          "url": "/content/experience-fragments/cox/residential/react/my_account/support/cox-app-download/cox-app-download-desktop-mobile.model.json"
+        }
+      }
+    }
+  }
+}

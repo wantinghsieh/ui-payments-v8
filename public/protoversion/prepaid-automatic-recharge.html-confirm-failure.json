@@ -1,0 +1,66 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "prepaid-automatic-recharge",
+    "templateName": "PrepaidAutomaticRechargeTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "confirm",
+        "oktaLogin": true,
+        "navigateTo": "/resaccount/prepaid-home.html",
+        "isprepaidCustomer": true,
+        "udoVars": {
+          "channel": "cox:res:payments",
+          "pageName": "cox:res:payments:prepaid-automatic-recharge:confirm",
+          "pageType": "payments",
+          "subSection": "cox:res:payments",
+          "businessUnit": "res:payments",
+          "purchaseStep": "payments",
+          "visitorLoginStatus": "loggedin"
+        },
+        "paymentConfirmDetails": {
+          "paymentDetailsInfo": {
+            "headerText": "EasyPay enrollment failed.",
+            "description": null,
+            "errorMessage": null
+          },
+          "paymentStatus": "failed",
+          "alerts": [
+            {
+              "message": "We were unable to use this payment method for EasyPay automatic payments. Please select a different payment method.",
+              "iconType": "error"
+            },
+            {
+              "message": "Sorry we were unable to process your enrollment. Please check your payment details below and try again.",
+              "iconType": "error"
+            }
+          ],
+          "accountDetails": {
+            "accountNumber": "001 3410 105432101",
+            "serviceAddress": "875 N Michigan Ave, Chicago, IL 60611"
+          },
+          "paymentDetails": [
+            {
+              "statementCode": "001",
+              "serviceName": "StraightUp Internet",
+              "status": "failed",
+              "type": "Visa",
+              "cclast4": "Visa ending in 6576"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

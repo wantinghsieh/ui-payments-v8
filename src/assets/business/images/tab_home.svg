@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63 (101010) - https://sketch.com -->
+    <title>1D3E5BD3-C769-47DC-B704-70B63B78395A</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="19.5232007%" y1="12.6177175%" x2="92.3656985%" y2="92.5903286%" id="linearGradient-1">
+            <stop stop-color="#00AAF4" offset="0%"></stop>
+            <stop stop-color="#002F87" offset="100%"></stop>
+        </linearGradient>
+        <path d="M12.08904,0 C11.5344,0 10.97976,0.204 10.5456,0.61296 L0.72432,9.86592 C0.26424,10.2996 0,10.91376 0,11.5512 L0,21.69984 C0,22.968 1.01736,24 2.26776,24 L21.73224,24 C22.98264,24 24,22.968 24,21.69984 L24,11.54448 C24,10.91472 23.74128,10.3056 23.29008,9.87288 L13.64688,0.62664 C13.21152,0.20904 12.65016,0 12.08904,0 M12.08904,1.92 C12.14952,1.92 12.23832,1.93608 12.318,2.0124 L21.9612,11.2584 C22.03464,11.32872 22.08,11.4384 22.08,11.54448 L22.08,21.69984 C22.08,21.906 21.92064,22.08 21.73224,22.08 L2.26776,22.08 C2.07936,22.08 1.92,21.906 1.92,21.69984 L1.92,11.5512 C1.92,11.44224 1.96512,11.33448 2.04096,11.2632 L11.86224,2.01048 C11.94144,1.93584 12.02928,1.92 12.08904,1.92" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="App-Navigation-" transform="translate(-258.000000, -249.000000)">
+            <g id="tab_home" transform="translate(258.000000, 249.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,68 @@
+{
+ "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "manage-payment-method",
+    "templateName": "ManagePaymentMethodTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "manage-payment-method",
+        "customerType": "residential",
+        "oktaLogin": true,
+        "headerText": "Manage payment methods",
+        "secondaryHeaderText": "",
+        "navigateTo": "/resaccount/home.html",
+         "cardExpiration": "It appears that your card has expired. Make sure that your expiration date is correct. If your card has expired, please use another method of payment.",
+        "listOfYears": [
+          "2024",
+          "2025",
+          "2026",
+          "2027",
+          "2028",
+          "2029",
+          "2030",
+          "2031",
+          "2032",
+          "2033",
+          "2034",
+          "2035",
+          "2036",
+          "2037",
+          "2038"
+        ],
+        "savedMop": [
+          {
+            "mopId": "3",
+            "type": "CARD",
+            "name": "Visa ending in 6576",
+            "classType": "visa",
+            "lastFourDigits": "6576",
+            "disabled": false,
+            "isDefaultMop": "false",
+            "expiringSoon": false
+          },
+          {
+            "mopId": "4",
+            "type": "CARD",
+            "name": "MasterCard ending in 6463",
+            "classType": "mastercard",
+            "lastFourDigits": "6463",
+            "disabled": true,
+            "isDefaultMop": "false",
+            "expiringSoon": false
+          }
+        ]
+      }
+    }
+  }
+}

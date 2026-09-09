@@ -1,0 +1,44 @@
+.payment-setup .no-payment-method-card {
+    display: flex;
+    padding: 32px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    border-radius: 20px;
+    background: var(--cox-resi-tertiary-t-3-white-lilac, var(--pay-color-bg-statement));
+}
+
+.payment-setup .no-payment-method-description {
+    width: 100%;
+    color: var(--pay-color-text-slate);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+}
+
+.payment-setup .no-payment-method-description>div {
+    display: flex;
+    justify-content: center;
+}
+
+#manage-payment-method {
+  .tabs-container,
+  input[type="radio"],
+  .custom-radio,
+  .line {
+    display: none;
+  }
+  .saved-mop-details {
+    padding-left: 100px;
+  }
+   .card-default-wrapper {
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color) !important;
+  }
+  .saved-mop-details-image {
+    left: 40px;
+  }
+}

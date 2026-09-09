@@ -1,0 +1,35 @@
+{
+  "page": {
+    "pageName": "add-payment-method",
+    "templateName": "AddPaymentMethodTemplate",
+    "displayHeader": false,
+    "displayFooter": false,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "sections": {
+      "payment": {
+        "headerText": "Add payment method",
+        "subHeaderText": "Payment methods",
+        "descriptionText": "How would you like to pay?",
+        "customerType": "residential",
+        "savedMop": [
+          {
+            "mopId": "1",
+            "type": "CARD",
+            "name": "Visa ending in 4444",
+            "classType": "visa",
+            "lastFourDigits": "4444"
+          }
+        ],
+        "showResponse": true,
+        "messages": {
+          "errorMessages": [],
+          "warningMessages": [],
+          "successMessages": [
+            "Your payment method has been saved. You can now return to chat to complete your payment."
+          ]
+        }
+      }
+    }
+  }
+}

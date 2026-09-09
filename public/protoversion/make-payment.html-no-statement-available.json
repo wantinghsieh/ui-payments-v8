@@ -1,0 +1,32 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "one-time-payment",
+    "templateName": "SetupTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "setup",
+        "headerText": "Welcome to online billing.",
+        "oktaLogin": true,
+        "pageError": null,
+        "navigateTo": "/ibill/home.html",
+        "noStmtAvailable": {
+          "noStmtAvailable": true,
+          "message": "Check back soon: your bill details will be shown here when available."
+        },
+        "statements": null
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "udo": {},
+    "page": {
+        "pageName": "paymentError",
+        "templateName": "PaymentErrorTemplate",
+        "displayHeader": false,
+        "displayFooter": false,
+        "minimalHeader": false,
+        "minimalFooter": false,
+        "sections": {
+            "udoVars": {
+                "channel": "cox:res:payments",
+                "pageName": "cox:res:payments:add-payment-method-error",
+                "pageType": "payments",
+                "subSection": "cox:res:payments",
+                "businessUnit": "res:payments",
+                "purchaseStep": "payments",
+                "visitorLoginStatus": "loggedout",
+                "amountDue": null,
+                "amountPastDue": null,
+                "amountAttempted": null,
+                "amountPaid": null,
+                "eventNames": null,
+                "selfHelpName": null,
+                "formError": null
+            },
+            "paymentError": {
+                "title": "Add payment method",
+                "errorCode": "UNKNOWN_ERROR",
+                "errorMessage": "Something went wrong. Please ask the agent for a new link so you can try again."
+            }
+        }
+    }
+}

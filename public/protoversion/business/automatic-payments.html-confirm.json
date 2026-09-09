@@ -1,0 +1,73 @@
+{
+    "udo": {
+        "categorySubscribed": [
+            "Internet"
+        ]
+    },
+    "page": {
+        "pageName": "automatic-payments",
+        "templateName": "EasyPaySetupTemplate",
+        "displayHeader": true,
+        "displayFooter": true,
+        "minimalHeader": false,
+        "minimalFooter": false,
+        "sections": {
+            "displayLeftNav": false,
+            "showCBPageHero": true,
+            "payment": {
+                "pageName": "confirm",
+                "headerText": "Autopay",
+                "oktaLogin": true,
+                "pageError": null,
+                "customerType": "business",
+                "cbHeaderDescription": "Enroll in Autopay to have your bill paid automatically every 30 days. Your first payment will process on the date shown below. You can update or cancel autopay anytime in the Cox Business App by Spectrum or MyAccount.",
+                "cbBackLink": "Back",
+                "isprepaidCustomer": false,
+                "paymentConfirmDetails": {
+                    "paymentStatus": "success",
+                    "messages": null,
+                    "paymentDetailsInfo": {
+                        "headerText": "You are all set. Thank you for enrolling in EasyPay.",
+                        "description": "You will be charged on your monthly payment due date."
+                    },
+                    "accountDetails": {
+                        "accountNumber": "001 3410 105432101",
+                        "serviceAddress": "875 N Michigan Ave, Chicago, IL, 60611"
+                    },
+                    "paymentMethod": {
+                        "type": "bank",
+                        "cclast4": "Wells Fargo ending in 6576",
+                        "paymentProviderId": "102000076"
+                    },
+                    "paymentDetails": [
+                        {
+                            "statementCode": "001",
+                            "serviceName": "Internet",
+                            "totalAmount": "55.06",
+                            "confirmation": "ABSDIDKDIFIDL",
+                            "status": "Succeeded",
+                            "nextPaymentDate": "Dec 5 2025"
+                        },
+                        {
+                            "statementCode": "002",
+                            "serviceName": "Internet",
+                            "totalAmount": "55.00",
+                            "confirmation": "ABSDIDKDIFIDL",
+                            "status": "Succeeded",
+                            "nextPaymentDate": "Dec 5 2025"
+                        },
+                        {
+                            "statementCode": "777",
+                            "serviceName": "Internet",
+                            "totalAmount": "55.06",
+                            "confirmation": "ABSDIDKDIFIDL",
+                            "status": "Succeeded",
+                            "nextPaymentDate": "Dec 5 2025"
+                        }
+                    ]
+                },
+                "coxAppContent": null
+            }
+        }
+    }
+}

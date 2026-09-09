@@ -1,0 +1,30 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "manage-payment-method",
+    "templateName": "ManagePaymentMethodTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "manage-payment-method",
+        "headerText": "Manage payment methods",
+        "pageError": null,
+        "navigateTo": "/mybill/home.html",
+        "customerType": "residential",
+        "oktaLogin": true,
+        "isprepaidCustomer": false,
+        "savedMop": null
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "make-payment",
+    "templateName": "SetupTemplate",
+    "displayHeader": false,
+    "displayFooter": false,
+    "displayCbHeader": true,
+    "displayCbFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+     "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "displayLeftNav": false,
+      "showCBPageHero": true,
+      "payment": {
+        "pageName": "setup-mop",
+        "headerText": "Make a payment",
+        "oktaLogin": true,
+        "pageError": null,
+        "customerType": "business",
+        "cbHeaderDescription": "View your accounts, payment methods, and make a payment here.",
+        "cbBackLink": "Back",
+        "pciChaseEncryptKeyJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/64100000000055/getkey.js",
+        "pciChaseEncryptJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/encryption.js",
+        "cardExpiration": null,
+        "notEligibleforPayment": false,
+        "paymentEligibilityErrorMessage": null,
+        "paymentSetupDetails": {
+          "description": null,
+          "totalBalanceDue": "275.92",
+          "paymentAmount": null,
+          "pastDueBalance": "162.69",
+          "udoVars": {
+            "channel": "cox:res:payments",
+            "pageName": "cox:res:payments:",
+            "pageType": "payments",
+            "subSection": "cox:res:payments",
+            "businessUnit": "res:payments",
+            "purchaseStep": "payments",
+            "visitorLoginStatus": "link-based-auth",
+            "amountDue": null,
+            "amountPastDue": null,
+            "amountAttempted": null,
+            "amountPaid": null,
+            "eventNames": null,
+            "selfHelpName": null,
+            "formError": null
+          }
+        },
+        "paymentSetupMopDetails": {
+          "isPastDue": false
+        },
+        "hasFullIbillAccess": true,
+        "paymentConfirmDetails": null,
+        "paymentRestrictions": {
+          "restrictBankPayment": false,
+          "restrictCardPayment": false,
+          "allPaymentRestricted": false
+        },
+        "listOfYears": [
+          "2025",
+          "2026",
+          "2027",
+          "2028",
+          "2029",
+          "2030",
+          "2031",
+          "2032",
+          "2033",
+          "2034",
+          "2035",
+          "2036",
+          "2037",
+          "2038",
+          "2039"
+        ],
+        "statements": [
+          {
+            "statementCode": "0545",
+            "name": "Internet",
+            "totalBalanceDue": "106.45",
+            "pastDueBalance": "55.25",
+            "selected": false
+          },
+          {
+            "statementCode": "0232",
+            "name": "TV",
+            "totalBalanceDue": "116.45",
+            "pastDueBalance": "0.00",
+            "selected": false
+          },
+          {
+            "statementCode": "0415",
+            "name": "Mobile",
+            "totalBalanceDue": "50.00",
+            "pastDueBalance": "0.00",
+            "selected": false
+          }
+        ],
+        "trustlyJs": "https://sandbox.trustly.one/start/scripts/trustly.js?accessId=",
+        "trustlyWidgetProps": {
+          "accessId": "Dwxws1XkP6WJUEswuadp",
+          "merchantId": "1305",
+          "paymentType": "Retrieval",
+          "merchantReference": ""
+        },
+        "multiAccount": true,
+         "savedMop": [
+            {
+                "mopId": "1",
+                "type": "BANK",
+                "name": "Wells Fargo ending in 6576",
+                "classType": "bank",
+                "lastFourDigits": "6576",
+                "paymentProviderId": "102000076",
+                "isDefaultMop": "true"
+            }
+        ],
+        "navigateTo": "https://myaccount-business.qaa1.cox.com/cbma/billingsummary/choosestatement",
+        "populateMiniSnapshot": {
+          "accountInfo": "701 8610 015273813",
+          "subscribedServicesAsString": "Internet, Mobile",
+          "billingOverview": "/ibill/home.html",
+          "serviceAddress": {
+            "addressLine1": "3612 6991 Gelidv Riv",
+            "addressLine2": "Californiacity, CA 93505",
+            "addressLine3": null,
+            "city": "Californiacity",
+            "state": "CA",
+            "zipCode5": "93505",
+            "zipCode4": "2170"
+          },
+          "services": "/resaccount/home.html",
+          "moveMyService": "/residential/move.html?campcode=account_dropdown_02202023"
+        }
+      }
+    }
+  }
+}

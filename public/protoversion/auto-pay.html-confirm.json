@@ -1,0 +1,54 @@
+{
+  "udo": {},
+  "page": {
+    "pageName": "automatic-payments-confirm",
+    "templateName": "EasyPayConfirmTemplate",
+    "displayHeader": false,
+    "displayFooter": false,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "payment": {
+        "pageName": "confirm",
+        "customerType": "residential",
+        "redirectToErrorPage": null,
+        "udoVariables": {
+          "channel": "cox:res:payments",
+          "pageName": "cox:res:payments:automatic-payments-confirm",
+          "pageType": "payments",
+          "subSection": "cox:res:payments",
+          "businessUnit": "res:payments",
+          "purchaseStep": "payments",
+          "visitorLoginStatus": "link-based-auth",
+          "amountDue": null,
+          "amountPastDue": null,
+          "amountAttempted": null,
+          "amountPaid": null,
+          "eventNames": "easyPaySignUp",
+          "selfHelpName": "payments:easy-pay-sign-up",
+          "formError": null
+        },
+        "paymentConfirmDetails": {
+          "paymentDetailsInfo": {
+            "headerText": "You are all set. Thank you for enrolling in EasyPay.",
+            "description": "You will be charged on your monthly payment due date.",
+            "errorMessage": ""
+          },
+          "paymentConfirmMethod": {
+            "methodData": {
+              "type": "bank",
+              "cardNumber": "Wells Fargo endning in 6576",
+              "paymentProviderId": "102000076"
+            }
+          },
+          "navigateToSignInMyaccount": "/resaccount/home.html"
+        },
+        "coxAppContent": {
+          "url": "/content/experience-fragments/cox/residential/react/my_account/support/cox-app-download/cox-app-download-desktop-mobile.model.json"
+        }
+      }
+    }
+  }
+}

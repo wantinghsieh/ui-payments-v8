@@ -1,0 +1,110 @@
+.back-navigation {
+  height: 40px;
+
+  .navigation-link { padding-left: 13px !important; }
+
+  .account-dropdown {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+
+    .dropdown-toggle {
+      &::after { display: none; }
+      &:focus { outline: 1px dotted var(--pay-color-primary); }
+    }
+  }
+}
+
+.account-dropdown {
+  .dropdown-link {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+
+  .account-dropdown-menu {
+    width: 260px;
+    padding: 10px !important;
+    border: 1px solid var(--pay-color-border-dropdown) !important;
+    border-radius: 5px !important;
+    color: var(--pay-color-text-primary) !important;
+    margin-top: 5px !important;
+    margin-left: -15px !important;
+    font-size: 0.8em;
+
+    .dropdown-menu-content {
+      color: var(--pay-color-text-primary);
+      font-family: var(--pay-font-medium);
+    }
+  }
+}
+
+.dropdown-link {
+  width: 73% !important;
+  margin-right: 10px;
+
+  .account-info {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    font-family: var(--pay-font-medium);
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 8px;
+      width: 20px;
+      background: url("https://media.one.qa.cox.com/ui/7_1/tsw/img/global/icons/arrow-down-black.svg") center right no-repeat;
+      padding-left: 0 !important;
+      margin-top: 8px;
+    }
+  }
+}
+
+// Desktop (≥1025px)
+@media screen and (min-width: 1025px) {
+  .account-dropdown .account-dropdown-menu { left: 24%; }
+}
+
+// Tablet
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .account-dropdown .account-dropdown-menu { left: 24%; }
+
+  .back-navigation .navigation-link { padding-left: 15px !important; }
+  .account-dropdown .dropdown-link { margin-right: 25px; }
+  .account-dropdown .dropdown-link .account-info { margin-left: 0; }
+}
+
+// Mobile
+@media screen and (max-width: 767px) {
+  .mini-account-snapshot {
+    .returnto-myaccount-link { width: 100%; max-width: 100%; margin: 0 0 6px; }
+    .feature-highlight { margin-bottom: 25px; }
+  }
+
+  .back-navigation {
+    height: 80px;
+
+    .navigation-link { padding-left: 15px !important; }
+
+    .account-dropdown {
+      margin-top: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px solid var(--pay-color-border-muted);
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+
+  .account-dropdown {
+    .dropdown-link {
+      padding-left: 0;
+      cursor: pointer;
+      width: 100% !important;
+      margin-right: 13px !important;
+
+      .account-info { padding-left: 0 !important; padding-right: 0 !important; }
+    }
+
+    .account-dropdown-menu { width: 100%; margin-top: 10px !important; margin-left: -1px !important; }
+  }
+}

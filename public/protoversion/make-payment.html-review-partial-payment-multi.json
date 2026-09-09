@@ -1,0 +1,75 @@
+{
+	"udo": {
+		"categorySubscribed": [
+			"Internet"
+		]
+	},
+	"page": {
+		"pageName": "one-time-payment",
+		"templateName": "ReviewTemplate",
+		"displayHeader": true,
+		"displayFooter": true,
+		"minimalHeader": false,
+		"minimalFooter": false,
+		"displayChat": true,
+		"chatContent": "Care",
+		"sections": {
+			"displayLeftNav": true,
+			"payment": {
+				"headerText": "Review details of payment",
+				"pageName": "review",
+				"oktaLogin": true,
+				"notEligibleforPayment": false,
+				"paymentReviewDetails": {
+					"expiringSoon": false,
+					"easyPayEnrolled": false,
+					"showEasyPayCheckbox": false,
+					"paperlessEnrolled": false,
+					"accountDetails": {
+						"accountNumber": "001 3410 105432",
+						"serviceAddress": "Addy2 if applicable, 123 Fake St. or longer, Johnsonville, KY 30338"
+					},
+					"paymentMethod": {
+						"type": "visa",
+						"cclast4": "Visa ending in 1234"
+					},
+					"billing": {
+						"paymentAmount": "106.31",
+						"paymentDate": "10/10/2025"
+					},
+					"paymentDetails": [
+						{
+							"statementCode": "0545",
+							"serviceName": "Internet",
+							"totalAmount": "55.06"
+						},
+						{
+							"statementCode": "0575",
+							"serviceName": "Cox Mobile",
+							"totalAmount": "51.25"
+						}
+					],
+					"billingOptions": {
+						"showEasyPayCheckbox": false,
+						"clickToCancelText": "Never miss a payment by enrolling in EasyPay for automatic monthly payments. You can cancel or update your payment method anytime throught Cox App or My Account.<br><br>If you wish to cancel Cox Services, you can do so with 24 hours' notice via chat, phone or in a retail store.",
+						"showPaperlessCheck": false,
+						"easyPayModalBody": null,
+						"easyPayModalHeader": null,
+						"mailId": "outagetesting@gmail.com"
+					}
+				},
+				"navigateTo": "/ibill/home.html",
+				"messages": {
+					"warningMessages": [
+						"You chose to pay less than the amount due on your <strong>{0}</strong> statement. We can process this payment, but please note it won't delay pending service disconnects or further collections activity. Please click the 'Back' button to  change payment amount."
+					]
+				},
+				"termsAndConditions": {
+					"otpModalHeader": "One-Time Payment Terms of Service",
+					"otpModalBody": "<p>By making a payment to Cox, you acknowledge that you are an authorized signer with the financial institution for the bank accounts, credit cards, or debit cards provided and you are expressly authorizing Cox to utilize consumer reporting information, and other fraud detection services to determine if we will accept your payment, and then initiate a one-time charge or debit entry in the amount indicated for services or equipment provided by Cox or one of our partners (plus applicable taxes, fees and surcharges). Cox may convert paper checks to electronic methods of processing such as ACH, ARC or ICL.&nbsp; Cox may store your payment information for administrative purposes but will not use it to process any future payments without your consent. You agree that if this payment is returned or rejected by your financial institution for any reason, Cox may reattempt this payment until it can be successfully drafted from your financial institution or until at Cox’s sole discretion the payment is deemed unable to be processed.&nbsp; If Cox deems the payment is unable to be processed, you understand and agree that we may charge your account a returned payment fee up to the maximum allowed by law.</p>\r\n"
+				},
+				"prepaid": false
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "prepaid-automatic-recharge",
+    "templateName": "PrepaidAutomaticRechargeTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "confirm",
+        "oktaLogin": true,
+        "navigateTo": "/resaccount/prepaid-home.html",
+        "isprepaidCustomer": true,
+        "udoVars": {
+          "channel": "cox:res:payments",
+          "pageName": "cox:res:payments:prepaid-automatic-recharge:confirm",
+          "pageType": "payments",
+          "subSection": "cox:res:payments",
+          "businessUnit": "res:payments",
+          "purchaseStep": "payments",
+          "visitorLoginStatus": "loggedin"
+        },
+        "paymentConfirmDetails": {
+          "paymentDetailsInfo": {
+            "headerText": "You are all set. Thank you for enrolling in EasyPay.",
+            "description": "You will be charged on your monthly payment due date.",
+            "errorMessage": null
+          },
+          "paymentStatus": "success",
+          "accountDetails": {
+            "accountNumber": "001 3410 105432101",
+            "serviceAddress": "875 N Michigan Ave, Chicago, IL 60611"
+          },
+          "paymentDetails": [
+            {
+              "statementCode": "001",
+              "serviceName": "StraightUp Internet",
+              "status": "success",
+              "type": "Visa",
+              "cclast4": "Visa ending in 6576"
+            }
+          ]
+        },
+        "coxAppContent": {
+          "url": "/content/experience-fragments/cox/residential/react/my_account/support/cox-app-download/cox-app-download-desktop-mobile.model.json"
+        }
+      }
+    }
+  }
+}

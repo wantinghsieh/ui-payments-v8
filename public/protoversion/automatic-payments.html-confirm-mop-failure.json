@@ -1,0 +1,71 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "automatic-payments-confirm",
+    "templateName": "EasyPaySetupTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "confirm",
+        "customerType": "residential",
+        "oktaLogin": true,
+        "headerText": "EasyPay enrollment failed.",
+        "description": null,
+        "isprepaidCustomer": false,
+        "navigateTo": "/ibill/home.html",
+        "udoVariables": {
+          "channel": "cox:res:payments",
+          "pageName": "cox:res:payments:automatic-payments-setup",
+          "pageType": "payments",
+          "subSection": "cox:res:payments",
+          "businessUnit": "res:payments",
+          "purchaseStep": "payments",
+          "visitorLoginStatus": "link-based-auth",
+          "amountDue": null,
+          "amountPastDue": null,
+          "amountAttempted": null,
+          "amountPaid": null,
+          "eventNames": null,
+          "selfHelpName": null,
+          "formError": null
+        },
+        "paymentConfirmDetails": {
+          "paymentStatus": "failed",
+          "messages": {
+            "errorMessages": [
+              "We were unable to use this payment method for EasyPay automatic payments. Please select a different payment method.",
+              "Sorry we were unable to process your enrollment. Please check your payment details below and try again."
+            ],
+            "warningMessages": [],
+            "successMessages": []
+          },
+          "paymentDetailsInfo": {
+            "headerText": "EasyPay enrollment failed.",
+            "description": null
+          },
+          "accountDetails": {
+            "accountNumber": "001 3410 105432101",
+            "serviceAddress": "875 N Michigan Ave, Chicago, IL, 60611"
+          },
+          "paymentMethod": {
+            "type": "bank",
+            "cclast4": "Wells Fargo ending in 6576",
+            "paymentProviderId": "102000076"
+          },
+          "paymentDetails": null
+        },
+        "coxAppContent": null
+      }
+    }
+  }
+}

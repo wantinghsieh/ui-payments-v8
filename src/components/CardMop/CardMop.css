@@ -1,0 +1,13 @@
+#mop-card.mop-container {
+  align-items: center;
+  border: 2px solid var(--pay-color-bg-page);
+  border-radius: var(--pay-radius-xl);
+  display: flex;
+  gap: 20px;
+  padding: 16px 28px;
+}
+
+#mop-card .mop-image {
+  height: 40px;
+  width: 40px;
+}

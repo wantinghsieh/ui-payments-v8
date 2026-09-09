@@ -1,0 +1,40 @@
+.pad-left-0-8   { padding-left: 0.8em; }
+.preformat-text { white-space: pre-line; }
+
+.header-with-title-desc {
+  background-color: var(--pay-color-bg-hero);
+  padding: 32px var(--pay-page-padding-cb);
+
+  .pageheader-title {
+    font-size: 42px;
+    font-weight: var(--pay-font-weight-bold);
+    line-height: 50px;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+  }
+
+  .pageheader-title-mobile {
+    font-size: 28px;
+    font-weight: var(--pay-font-weight-bold);
+    line-height: 36px;
+    letter-spacing: -0.6px;
+    margin-bottom: 8px;
+  }
+
+  .pageheader-description {
+    font-size: var(--pay-font-size-base);
+    font-style: normal;
+    font-weight: var(--pay-font-weight-regular);
+    line-height: 23px;
+  }
+}
+
+.navigation-back { padding-bottom: 23px; }
+
+@media screen and (max-width: 767px) {
+  .header-with-title-desc { padding: 20px !important; }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-with-title-desc { padding: 32px var(--pay-page-padding-md); }
+}

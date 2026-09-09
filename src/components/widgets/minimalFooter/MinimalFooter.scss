@@ -1,0 +1,25 @@
+footer .cox-cb-footer {
+  background: var(--pay-gradient-busi) !important;
+  height: 0.4375rem !important;
+  width: 100%;
+  padding-top: 8px;
+}
+
+footer .cox-cb-footer .footer-footer {
+  font-size: var(--pay-font-size-sm) !important;
+  background-color: var(--pay-color-bg-subtle) !important;
+}
+
+footer .cox-cb-footer a {
+  font-size: var(--pay-font-size-sm);
+  color: var(--pay-color-black);
+  text-decoration: none;
+  line-height: 2.2;
+  opacity: 0.8;
+}
+
+footer .cox-cb-footer p {
+  font-size: var(--pay-font-size-sm);
+  color: var(--pay-color-black);
+  opacity: 0.8;
+}

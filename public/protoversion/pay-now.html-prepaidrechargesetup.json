@@ -1,0 +1,39 @@
+{
+  "page": {
+    "pageName": "make-payment",
+    "templateName": "SetupTemplate",
+    "displayHeader": false,
+    "displayFooter": false,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "sections": {
+      "payment": {
+        "headerText": "Prepaid recharge",
+        "pciChaseEncryptKeyJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/64100000000055/getkey.js",
+        "pciChaseEncryptJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/encryption.js",
+        "cardExpiration": "It appears that your card has expired. Make sure that your expiration date is correct. If your card has expired, please use another method of payment.",
+        "pageError": null,
+        "paymentSetupDetails": {
+          "description": "Your StraightUp service will be renewed for <strong>$50.00</strong> today.",
+          "paymentAmount": "$50.00",
+          "udoVars": {
+            "channel": "cox:res:payments",
+            "pageName": "cox:res:payments:make-payment-setup",
+            "pageType": "payments",
+            "subSection": "cox:res:payments",
+            "businessUnit": "res:payments",
+            "purchaseStep": "payments",
+            "visitorLoginStatus": "link-based-auth",
+            "amountDue": "2",
+            "amountPastDue": "151"
+          }
+        },
+        "paymentRestrictions":{
+          "restrictBankPayment": true,
+          "restrictCardPayment": false
+        },
+        "listOfYears": ["2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038"]
+      }
+    }
+  }
+}

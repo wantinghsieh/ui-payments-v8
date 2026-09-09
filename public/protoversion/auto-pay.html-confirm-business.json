@@ -1,0 +1,35 @@
+{
+  "udo": {},
+  "page": {
+    "pageName": "automatic-payments-confirm",
+    "templateName": "EasyPayConfirmTemplate",
+    "displayHeader": false,
+    "displayFooter": false,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "payment": {
+        "pageName": "confirm",
+        "customerType": "business",
+        "redirectToErrorPage": null,
+        "paymentConfirmDetails": {
+          "paymentDetailsInfo": {
+            "headerText": "You are all set. Thank you for enrolling in EasyPay.",
+            "description": "You will be charged on your monthly payment due date.",
+            "errorMessage": ""
+          },
+          "paymentConfirmMethod": {
+            "methodData": {
+              "type": "bank",
+              "cardNumber": "Wells Fargo ending in 6576",
+              "paymentProviderId": "102000076"
+            }
+          },
+          "navigateToSignInMyaccount": "/resaccount/home.html"
+        }
+      }
+    }
+  }
+}

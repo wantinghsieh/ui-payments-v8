@@ -1,0 +1,31 @@
+.payment-container h1 { text-align: center; }
+
+.step-indicator {
+  text-align: center;
+  margin-top: 20px;
+
+  span {
+    font-size: var(--pay-font-size-md);
+    font-family: var(--pay-font-medium);
+    text-align: center;
+    color: var(--pay-color-primary);
+
+    &.pending-step { color: var(--pay-color-text-muted); }
+  }
+
+  .col-4:not(:last-child) span:after {
+    content: "\203A";
+    right: 5%;
+    top: -1px;
+    font-size: 18px;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .step-indicator .col-4:not(:last-child) span:after { right: 3%; }
+}
+
+@media screen and (max-width: 320px) {
+  .step-indicator { margin-left: -10px; }
+}

@@ -1,0 +1,67 @@
+.button-group {
+  display: flex;
+  margin: 0;
+  gap: 1.25rem;
+}
+
+#payment-setup .setup-container input[type="checkbox"]:not([disabled="disabled"]) + label:before,
+#payment-setup .form-options-checkbox .checkbox-title,
+#payment-setup .payment-date-wrapper .radio-button-title,
+#payment-setup .payment-date-wrapper input[type="radio"]:not([disabled="disabled"]) + label:before {
+  display: none !important;
+}
+
+#payment-setup .form-check-label { margin-bottom: 0; }
+#payment-setup .payment-date-today { margin: 12px 0; }
+#payment-setup .payment-date-label { display: flex; }
+#payment-setup .payment-date-label .form-radio-label { margin: 0; }
+#payment-setup .setup-container { margin-bottom: 16px; }
+
+#payment-setup .payment-date-wrapper .other-amount,
+#payment-setup .payment-date { margin-top: 16px; }
+
+#payment-setup .other-date-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#payment-setup .other-date-wrapper .form-radio-label { margin: 0 !important; }
+#payment-setup .other-date-wrapper .input-group { margin-bottom: 0 !important; }
+#payment-setup .other-date-wrapper .input { padding: 6px 20px; }
+#payment-setup .payment-method-header-wrapper { padding-top: 16px; }
+#other-date-txt-error { margin-left: 42px; }
+
+.add-credit-card {
+  font-weight: var(--pay-font-weight-bold);
+  text-decoration: none !important;
+  color: var(--pay-color-primary) !important;
+  cursor: pointer;
+}
+
+.custom-secondary-btn .secondary { margin-left: 0 !important; }
+
+.custom-payment-margin .trustly-container {
+  padding: 24px;
+  border-radius: var(--pay-radius-xl);
+  max-width: 75%;
+  background-color: var(--pay-color-bg-statement);
+}
+
+@media (min-width: 995px) and (max-width: 1199px) {
+  .custom-payment-margin .trustly-container { max-width: 100%; }
+}
+
+@media (max-width: 495px) {
+  .custom-payment-margin .trustly-container { padding: 16px; max-width: 100%; }
+}
+
+@media (max-width: 425px) {
+  .custom-payment-margin .trustly-container { width: 300px; max-width: none; }
+  #payment-setup .date-picker-wrapper { width: 55%; }
+  #payment-setup input[type="radio"]:not([disabled="disabled"]) + label { margin-right: 0; }
+}
+
+@media (max-width: 320px) {
+  .custom-payment-margin .trustly-container { width: 240px; max-width: none; }
+}

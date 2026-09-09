@@ -1,0 +1,34 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "prepaid-automatic-recharge",
+    "templateName": "PrepaidAutomaticRechargeTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "manage-statement",
+        "oktaLogin": true,
+        "navigateTo": "/payments/prepaid-automatic-recharge.html",
+        "isprepaidCustomer": true,
+        "statements": [
+          {
+            "statementCode": "001",
+            "name": "StraightUp Internet",
+            "enrolled": true,
+            "paymentMethod": "Visa ending in 6576"
+          }
+        ]
+      }
+    }
+  }
+}

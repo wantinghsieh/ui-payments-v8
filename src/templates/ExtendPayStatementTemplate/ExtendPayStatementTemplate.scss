@@ -1,0 +1,183 @@
+// -------------------- COMMON STYLES --------------------
+
+#extend-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#extend-payment .navigation-back { padding-bottom: 7px; }
+
+#extend-payment .header-text {
+  font-size: var(--pay-font-size-xl);
+  font-style: normal;
+  font-weight: var(--pay-font-weight-medium);
+  line-height: 34px;
+  margin-bottom: 4px;
+}
+
+#extend-payment .sub-header-text {
+  font-size: var(--pay-font-size-lg);
+  font-style: normal;
+  font-weight: var(--pay-font-weight-medium);
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  margin-bottom: 0;
+}
+
+#extend-payment .form-radio-label span,
+#extend-payment .body-header {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: var(--pay-font-weight-medium);
+  line-height: 22px;
+  letter-spacing: -0.36px;
+}
+
+#extend-payment .body-text {
+  font-size: var(--pay-font-size-base);
+  font-style: normal;
+  font-weight: var(--pay-font-weight-regular);
+  line-height: 23px;
+  margin-bottom: 0;
+}
+
+#extend-payment .label-sub-text {
+  color: var(--pay-color-text-slate);
+  display: flex;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: var(--pay-font-weight-regular);
+  line-height: 20px;
+  margin-left: 36px;
+  margin-top: 4px;
+}
+
+// -------------------- SETUP TEMPLATE STYLES --------------------
+#extend-payment-setup-container label.form-radio-label::before,
+#extend-payment-setup-container .radio-button-title,
+#extend-payment-setup-container .form-label {
+  display: none !important;
+}
+
+#extend-payment-setup-container .form-radio-label { margin: 0 !important; }
+
+#extend-payment-setup-container .input.responsive-size {
+  margin-left: 10px;
+  padding: 12px 40px 12px 20px;
+}
+
+#extend-payment-setup-container .extend-payment-setup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.single-statement-label {
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: var(--pay-font-weight-medium) !important;
+  line-height: 24px !important;
+  margin-bottom: 0;
+}
+
+.disabled-single-statement-label { color: var(--pay-color-text-muted); }
+
+#extend-payment-setup-container .statement-radio-button-card {
+  align-items: center;
+  border: 1px solid var(--pay-color-border-muted);
+  border-radius: var(--pay-radius-xl);
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+#extend-payment-setup-container .selected-statement-radio-button-card {
+  border: 3px solid var(--pay-color-accent-blue);
+}
+
+#extend-payment-setup-container .error-statement-radio-button-card {
+  border: 1px solid var(--pay-color-error-alt);
+}
+
+#extend-payment-setup-container .disable-selected-statement-radio-button-card {
+  border: 3px solid var(--pay-color-border);
+}
+
+#extend-payment-setup-container .disabled-modal-pop-up-button { flex-shrink: 0; }
+
+#extend-payment-setup-container .statement-radio-button {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+#extend-payment-setup-container .statement-price {
+  color: var(--pay-color-business);
+  font-size: 18px;
+  font-weight: var(--pay-font-weight-bold);
+}
+
+#extend-payment-setup-container .statement-details-container {
+  background: var(--pay-color-bg-statement);
+  border-radius: var(--pay-radius-xl);
+  margin-top: 4px;
+  padding: 16px 64px;
+}
+
+@media screen and (max-width: 700px) {
+  #extend-payment-setup-container .statement-details-container { padding: 16px 24px; }
+}
+
+#extend-payment-setup-container .radio-group-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+#extend-payment-setup-container .radio-button-container {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+#extend-payment-setup-container .radio-button-container .form-radio-label span {
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: var(--pay-font-weight-regular) !important;
+  line-height: 24px !important;
+  margin-bottom: 0;
+}
+
+.extend-payment-modal-statement-card {
+  padding: 24px 28px;
+  background: var(--pay-color-bg-page);
+  border-radius: var(--pay-radius-xl);
+  margin: 6px 0 0 0;
+}
+
+#extend-payment-setup-container .other-amount-input-container { display: flex; flex-direction: column; }
+
+#extend-payment-setup-container .other-amount-input-container input {
+  padding: 8px 40px 8px 20px;
+  border: 2px solid var(--pay-color-border);
+  border-radius: 15px;
+  outline: none;
+}
+
+#extend-payment-setup-container .add-margin .form-options-radio-container { margin-bottom: 40px; }
+
+#extend-payment-setup-container .custom-radio { flex-shrink: 0; }
+
+#extend-payment-setup-container .other-amount-input-container .text-input-error {
+  border: 2px solid var(--pay-color-error);
+}
+
+#extend-payment-setup-container .other-amount-input-container .text-input-error:focus {
+  outline: 1px solid var(--pay-color-error-alt);
+}
+
+#extend-payment-setup-container .submit-button { text-align: left; }

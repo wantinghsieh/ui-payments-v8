@@ -1,0 +1,65 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "extend-payment",
+    "templateName": "ExtendPaySetupTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "setup",
+        "headerText": "Request additional time to pay",
+        "secondaryHeaderText": "Can't pay today? We understand sometimes you need a little extra time. Let us know when you will be able to make a payment.",
+        "pageError": null,
+        "navigateTo": "/mybill/home.html",
+        "customerType": "residential",
+        "oktaLogin": true,
+        "isprepaidCustomer": false,
+        "maxcollectionDueDate": "2026-12-30",
+        "udoVariables": {
+          "channel": "cox:res:payments",
+          "pageName": "cox:res:payments:extend-payment-setup",
+          "pageType": "payments",
+          "subSection": "cox:res:payments",
+          "businessUnit": "res:payments",
+          "purchaseStep": "payments",
+          "visitorLoginStatus": "link-based-auth",
+          "amountDue": null,
+          "amountPastDue": null,
+          "amountAttempted": null,
+          "amountPaid": null,
+          "eventNames": null,
+          "selfHelpName": null,
+          "formError": null
+        },
+        "pciChaseEncryptKeyJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/64100000000055/getkey.js",
+        "pciChaseEncryptJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/encryption.js",
+        "futurePayEligibilityError": "",
+        "noStmtAvailable": {
+          "noStmtAvailable": false,
+          "message": "Check back soon: your bill details will be shown here when available."
+        },
+        "statements": [
+          {
+            "statementCode": "0545",
+            "name": "Internet",
+            "totalBalanceDue": "106.45",
+            "pastDueBalance": "55.25",
+            "label": "Amount increases to $60.94 if paid on or after 2/3/2022 due to new bill.",
+            "selected": false,
+            "disabled": false
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "automatic-payments",
+    "templateName": "EasyPaySetupTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "error",
+        "headerText": "EasyPay automatic payments",
+        "navigateTo": "/ibill/home.html",
+        "customerType": "residential",
+        "oktaLogin": true,
+        "errorMessages": [
+          "An error occurred while processing your request. Please try later."
+        ]
+      }
+    }
+  }
+}

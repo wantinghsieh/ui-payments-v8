@@ -1,0 +1,134 @@
+/**
+ * app-tokens.scss — App-scoped design tokens for ui-payments-v8 (gap-only)
+ *
+ * NAMING CONVENTION: --payments-{category}-{variant}
+ *
+ * SCOPE POLICY :
+ *   Every token here represents a TRUE GAP — a value with no equivalent in
+ *   @cox/ui-tokens. Component CSS calls Core tokens directly:
+ *     color: var(--color-blue-700);     // ← direct Core primitive
+ *     padding: var(--space-200);        // ← direct Core primitive
+ *   Local --payments-* tokens are reserved for values where @cox/ui-tokens
+ *   has no match. See src/token-gaps.md for every gap and its reason.
+ *
+ *   When @cox/ui-tokens adds a matching primitive in a future release,
+ *   replace the raw value here and all call sites update automatically.
+ *
+ * THEME SCOPING (active):
+ *   src/index.tsx imports BOTH @cox/ui-tokens/tokens/residential (.cox-resi)
+ *   and business (.cox-busi). public/index.html ships <html class="cox-resi">
+ *   as default; AppRoutes.tsx flips to "cox-busi" when customerType === "business".
+ *   --color-*, --font-*, --space-*, --radius-* primitives all resolve via that
+ *   class scope. Switch themes by swapping the class — no other code changes.
+ */
+
+:root {
+  /* ===========================================================================
+     COLORS — Surfaces / Backgrounds (no Core equivalent)
+     =========================================================================== */
+  --payments-color-bg-list-dark:     #e4e4e4; /* TOKEN-GAP: MegaMenu dark list bg, no Core token */
+
+  /* ===========================================================================
+     COLORS — Focus / Interactive (no Core equivalent)
+     =========================================================================== */
+  --payments-color-link-active-bg: #e0dcdc; /* TOKEN-GAP: mobile drawer active-link bg */
+
+  /* ===========================================================================
+     COLORS — Footer Gradient (no Core equivalent)
+     =========================================================================== */
+  --payments-color-footer-top-start: #0565a9; /* TOKEN-GAP: footer gradient blue */
+  --payments-color-footer-top-end:   #045791; /* TOKEN-GAP: footer gradient blue-dark */
+
+  /* ===========================================================================
+     GRADIENTS — composite values (no Core equivalent)
+     =========================================================================== */
+  --payments-gradient-resi:     linear-gradient(90deg, var(--color-blue-500) 30%, var(--color-green-500) 95%, var(--color-green-500) 100%);
+  --payments-gradient-busi:     linear-gradient(90deg, var(--color-blue-500) 30%, var(--color-blue-800)  95%, var(--color-blue-800)  100%);
+  // "Cox is now Spectrum" brand transition bars, applied when the minimal
+  // header/footer add the `.spectrum` modifier (spectrumLogoEnabled). The resi
+  // bar is green→royal blue (Cox transitioning into Spectrum, left to right)
+  // and the CB bar is royal blue→navy. Same 90deg direction/stops as the
+  // legacy gradients; only the colors change.
+  // These hex exist in @cox/ui-tokens only in the theme-scoped Spectrum sets
+  // (Kite --color-text-interactive/--color-border-gradient, Nova --color-background-busi);
+  // kept as raw hex because this bar must be theme-invariant — a self-theming token
+  // would render Cox colors on Cox pages.
+  --payments-gradient-resi-spectrum: linear-gradient(90deg, #03c252 30%, #005eff 95%, #005eff 100%); /* TOKEN-GAP: Spectrum brand colors — see src/token-gaps.md */
+  --payments-gradient-busi-spectrum: linear-gradient(90deg, #005eff 30%, #00194a 95%, #00194a 100%); /* TOKEN-GAP: Spectrum brand colors — see src/token-gaps.md */
+
+  /* ===========================================================================
+     TYPOGRAPHY — App font-family aliases, deferred to the theme font
+     --font-family-sans self-themes per scope (Spectrum Sans on residential via Kite,
+     CeraPro on Cox business); these aliases defer to it so the font follows the theme.
+     base/bold/medium share the same family — weight is applied via font-weight.
+     =========================================================================== */
+  --payments-font-base:   var(--font-family-sans, sans-serif);
+  --payments-font-bold:   var(--font-family-sans, sans-serif);
+  --payments-font-medium: var(--font-family-sans, sans-serif);
+
+  /* ===========================================================================
+     SPACING — off-grid (no Core equivalent within 1px)
+     =========================================================================== */
+  --payments-space-2: 0.625rem;  /* TOKEN-GAP: 10px — between --space-100:8px and --space-150:12px */
+  --payments-space-4: 1.875rem;  /* TOKEN-GAP: 30px — no Core token */
+  --payments-space-5: 3.75rem;   /* TOKEN-GAP: 60px — nearest --space-800:64px (4px off) */
+
+  /* ===========================================================================
+     BORDER RADIUS — off-grid (no Core equivalent within 1px)
+     =========================================================================== */
+  --payments-radius-md:   0.875rem;  /* TOKEN-GAP: 14px — between --radius-lg:12px and --radius-xl:16px */
+  --payments-radius-pill: 50px;      /* TOKEN-GAP: app uses 50px; --radius-pill:999px has different visual meaning */
+
+  /* ===========================================================================
+     LAYOUT — app-specific structural values (no Core equivalent)
+     =========================================================================== */
+  --payments-modal-max-width:  798px;  /* TOKEN-GAP: app-specific layout */
+  --payments-page-padding:     50px;   /* TOKEN-GAP: nearest --space-600:48px (2px off) */
+  --payments-page-padding-cb:  232px;  /* TOKEN-GAP: app-specific sidebar offset */
+  --payments-page-padding-md:  150px;  /* TOKEN-GAP: app-specific mid-width padding */
+  --payments-page-padding-mob: 30px;   /* TOKEN-GAP: 30px — no Core token */
+
+  /* ===========================================================================
+     Z-INDEX — structural integers (brand-agnostic)
+     =========================================================================== */
+  --payments-z-base:    1;
+  --payments-z-header:  2;
+  --payments-z-modal:   1000;
+  --payments-z-tooltip: 1070;
+
+  /* ===========================================================================
+     COMPONENT — Alerts left accent stripe (no Core equivalent)
+     =========================================================================== */
+  --payments-border-width-alert: 4px; /* TOKEN-GAP: --border-width-3:3px nearest (1px off; visual impact — kept exact) */
+
+  /* ===========================================================================
+     SHADOWS / OVERLAYS — rgba composites (no Core --elevation-* primitive)
+     =========================================================================== */
+  --payments-color-shadow-hover:     rgba(0, 0, 0, 0.302); /* TOKEN-GAP: business button hover shadow */
+  --payments-color-shadow-hover-alt: rgba(0, 0, 0, 0.3);   /* TOKEN-GAP: card hover lift */
+  --payments-color-shadow-checkbox:  rgba(213, 213, 213, 0.75); /* TOKEN-GAP: tooltip box-shadow glow */
+  --payments-color-overlay-medium:   rgba(0, 0, 0, 0.5);   /* TOKEN-GAP: dropdown shadow / scrim */
+  --payments-color-overlay-blur:     rgba(0, 0, 0, 0.6);   /* TOKEN-GAP: blur-background overlay */
+  --payments-color-overlay-dark:     rgba(0, 0, 0, 0.8);   /* TOKEN-GAP: throbber backdrop */
+
+  /* ===========================================================================
+     COMPONENT — Tab Active Indicator (regression fix)
+     Restores the core-ui8 v7 token that was dropped in v5.
+     =========================================================================== */
+  --button-primary-color-surface-hover-on-muted-1: var(--color-blue-1000, #0f155b); /* Royal Blue */
+
+  /* ===========================================================================
+     COMPONENT — Business Button Overrides (no Core equivalent)
+     =========================================================================== */
+  --payments-business-hover-border:  var(--color-blue-1000, #0f155b); /* Royal Blue (chains to Core) */
+  --payments-business-focus-border:  #0074b3; /* TOKEN-GAP: business focus ring blue, no Core token */
+  --payments-business-focus-shadow:  #51cbee; /* TOKEN-GAP: business focus glow cyan, no Core token */
+  --payments-business-focus-shadow2: #146ea6; /* TOKEN-GAP: business focus shadow blue, no Core token */
+
+  /* ===========================================================================
+     COMPONENT — Default badge text color (locked)
+     core-ui8 hardcodes badge text via inline style; this token guarantees the
+     CSS-cascade fallback also resolves to Night Grey regardless of upstream drift.
+     =========================================================================== */
+  --payments-color-badge-text: #202020; /* TOKEN-GAP: locked Night Grey for default badge */
+}

@@ -1,0 +1,16 @@
+.extend-date-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 0 16px 0;
+
+  .extend-datepicker-header {
+    color: var(--pay-color-text-primary);
+    font-size: var(--pay-font-size-lg);
+    font-weight: var(--pay-font-weight-medium);
+    line-height: 22px;
+    letter-spacing: -0.4px;
+  }
+}
+
+#extend-pay-mop-setup .button-group { margin-top: 24px; }

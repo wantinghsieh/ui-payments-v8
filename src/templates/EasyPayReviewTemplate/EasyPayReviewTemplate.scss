@@ -1,0 +1,159 @@
+#easy-pay-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#easy-pay-container .navigation-back { padding-bottom: 8px; }
+
+#easy-pay-container .header {
+  font-size: var(--pay-font-size-xl);
+  font-style: normal;
+  font-weight: var(--pay-font-weight-medium);
+  line-height: 34px;
+}
+
+#easy-pay-container .sub-header {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  font-size: var(--pay-font-size-lg);
+  font-style: normal;
+  font-weight: var(--pay-font-weight-medium);
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  margin-bottom: 0;
+}
+
+#easy-pay-container .sub-header .sub-header-label {
+  color: var(--pay-color-text-slate);
+  font-size: 13px;
+  font-weight: var(--pay-font-weight-regular);
+  line-height: 20px;
+}
+
+#easy-pay-container .body-content {
+  font-size: var(--pay-font-size-base);
+  font-style: normal;
+  font-weight: var(--pay-font-weight-regular);
+  line-height: 23px;
+  margin-bottom: 4px;
+}
+
+#easy-pay-container .warning-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 14px 0 24px 0;
+}
+
+#easy-pay-container .business-container { margin: 14px 0 0; }
+
+#easy-pay-container #review-details-container { display: flex; flex-direction: column; }
+
+#easy-pay-container #account-details-container,
+#easy-pay-container #payment-method-container,
+#easy-pay-container #billing-details-container,
+#easy-pay-container #payment-details-container,
+#easy-pay-container #billing-options-container,
+#easy-pay-container #tnc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+#easy-pay-container form { display: flex; flex-direction: column; gap: 16px; }
+#easy-pay-container label { margin-bottom: 0; }
+#easy-pay-container .click-to-cancel-text p { margin-bottom: 0; }
+
+#easy-pay-container #easy-pay-button-container { margin-top: 40px; }
+#easy-pay-container .text-button { padding: 3px !important; }
+
+@media screen and (min-width: 768px) {
+  #easy-pay-container #easy-pay-button-container { display: flex; gap: 24px; }
+}
+
+// Error styles
+#tnc-container .error-container {
+  align-items: center;
+  color: var(--pay-color-error-alt);
+  display: flex;
+  font-size: var(--pay-font-size-base);
+  gap: 0.25em;
+  margin: 0 !important;
+}
+
+#tnc-container .error-banner-icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  top: -0.5px;
+}
+
+// CUSTOM CHECK BOX STYLES
+#billing-options-container .custom-checkbox,
+#tnc-container .custom-checkbox {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+/* Hide the native checkbox */
+#billing-options-container .custom-checkbox input[type="checkbox"],
+#tnc-container .custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom box */
+#billing-options-container .custom-checkbox .checkmark,
+#tnc-container .custom-checkbox .checkmark {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border: 2px solid var(--pay-color-border);
+  border-radius: 5px;
+  background-color: var(--pay-color-white);
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#billing-options-container .custom-checkbox .checkmark:hover,
+#tnc-container .custom-checkbox .checkmark:hover {
+  outline: 1px solid var(--pay-color-info);
+  outline-offset: 3px;
+}
+
+#tnc-container .custom-checkbox-error .checkmark {
+  border: 2px solid var(--pay-color-error-alt) !important;
+}
+
+/* Checked state */
+#billing-options-container .custom-checkbox input[type="checkbox"]:checked + .checkmark,
+#tnc-container .custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: var(--pay-color-primary);
+  border-color: var(--pay-color-primary);
+}
+
+/* Checkmark centered, white tick */
+#billing-options-container .custom-checkbox input[type="checkbox"]:checked + .checkmark::after,
+#tnc-container .custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 5px;
+  height: 12px;
+  border: solid var(--pay-color-white);
+  border-width: 0 1.6px 1.6px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  box-sizing: content-box;
+}

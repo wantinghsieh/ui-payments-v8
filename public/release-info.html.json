@@ -1,0 +1,27 @@
+{
+    "udo": {},
+    "page": {
+        "pageName": "ReleaseInfo",
+        "templateName": "releaseInfoTemplate",
+        "displayHeader": false,
+        "displayFooter": false,
+        "displayChat": false,
+        "chatContent": "care",
+        "sections": {
+            "alerts": {
+                "errors": [],
+                "warnings": [],
+                "notifications": [],
+                "success": []
+            },
+            "displayLeftNav": false,
+            "pageTitle": "Release info",
+            "pageHeader": "Release info"
+        }
+    },
+    "reserved": {
+        "pageversion": "",
+        "csrfToken": ""
+    },
+    "custom": {}
+}

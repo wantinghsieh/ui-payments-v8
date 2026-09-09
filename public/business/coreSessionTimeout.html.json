@@ -1,0 +1,18 @@
+{
+    "page": {
+      "pageName": "coreSessionTimeout",
+      "templateName": "coreSessionTimeoutTemplate",
+      "displayHeader": false,
+      "displayFooter": false,
+      "minimalHeader": true,
+      "minimalFooter": true,
+      "sections": {
+        "navigateTo": "https://myaccount-business.qaa1.cox.com/unauth/login",
+        "paymentError": {
+          "title": "Your session has expired.",
+          "errorCode": "UNKNOWN_ERROR",
+          "errorMessage": "Your session has ended due to a long period of inactivity to keep your account secure. To continue shopping, please log into your account."
+        }
+      }
+    }
+  }

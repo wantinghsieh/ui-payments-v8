@@ -1,0 +1,344 @@
+#future-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#future-payment .navigation-back { padding-bottom: 8px; }
+
+#future-payment .header {
+  font-size: var(--pay-font-size-xl);
+  font-style: normal;
+  font-weight: var(--pay-font-weight-medium);
+  line-height: 34px;
+}
+
+#future-payment .sub-header {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  font-size: var(--pay-font-size-lg);
+  font-style: normal;
+  font-weight: var(--pay-font-weight-medium);
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  margin-bottom: 0;
+}
+
+#future-payment .sub-header .sub-header-label {
+  color: var(--pay-color-text-slate);
+  font-size: 13px;
+  font-weight: var(--pay-font-weight-regular);
+  line-height: 20px;
+}
+
+#future-payment .body-content {
+  font-size: var(--pay-font-size-base);
+  font-style: normal;
+  font-weight: var(--pay-font-weight-regular);
+  line-height: 23px;
+  margin-bottom: 4px;
+}
+
+#future-payment .warning-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 14px 0 24px 0;
+}
+
+#future-payment #review-details-container { display: flex; flex-direction: column; }
+
+#future-payment #review-payments-container { display: flex; flex-direction: column; gap: 16px; }
+
+#future-payment #account-details-container,
+#future-payment #payment-method-container,
+#future-payment #billing-details-container,
+#future-payment #payment-details-container,
+#future-payment #billing-options-container,
+#future-payment #tnc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+#future-payment #tnc-container .tnc-header { margin-top: 24px; }
+
+#future-payment form { display: flex; flex-direction: column; gap: 16px; }
+
+// #future-payment label { margin-bottom: 0; }
+
+#future-payment .click-to-cancel-text p { margin-bottom: 0; }
+
+#future-payment #easy-pay-button-container { margin-top: 40px; }
+
+#future-payment .text-button { padding: 3px !important; }
+
+@media screen and (min-width: 768px) {
+  #future-payment #easy-pay-button-container { display: flex; gap: 24px; }
+}
+
+// Error styles
+#tnc-container .error-container {
+  align-items: center;
+  color: var(--pay-color-error-alt);
+  display: flex;
+  font-size: var(--pay-font-size-base);
+  gap: 0.25em;
+  margin: 0 !important;
+}
+
+#tnc-container .error-banner-icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  top: -0.5px;
+}
+
+// CUSTOM CHECK BOX STYLES
+#billing-options-container .custom-checkbox,
+#tnc-container .custom-checkbox {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+/* Hide the native checkbox */
+#billing-options-container .custom-checkbox input[type="checkbox"],
+#tnc-container .custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom box */
+#billing-options-container .custom-checkbox .checkmark,
+#tnc-container .custom-checkbox .checkmark {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border: 2px solid var(--pay-color-border);
+  border-radius: 5px;
+  background-color: var(--pay-color-white);
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#billing-options-container .custom-checkbox .checkmark:hover,
+#tnc-container .custom-checkbox .checkmark:hover {
+  outline: 1px solid var(--pay-color-info);
+  outline-offset: 3px;
+}
+
+#tnc-container .custom-checkbox-error .checkmark {
+  border: 2px solid var(--pay-color-error-alt) !important;
+}
+
+/* Checked state */
+#billing-options-container .custom-checkbox input[type="checkbox"]:checked + .checkmark,
+#tnc-container .custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: var(--pay-color-primary);
+  border-color: var(--pay-color-primary);
+}
+
+/* Checkmark centered, white tick */
+#billing-options-container .custom-checkbox input[type="checkbox"]:checked + .checkmark::after,
+#tnc-container .custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 5px;
+  height: 12px;
+  border: solid var(--pay-color-white);
+  border-width: 0 1.6px 1.6px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  box-sizing: content-box;
+}
+
+.review-heading { font-size: 1.875em; }
+.review-heading-text { line-height: 1.25em; margin-bottom: 15px; }
+.subheading-payment-details { font-size: 1.5em; text-align: left; margin-bottom: 0; }
+.subheading-optional-section { font-size: 1.5em; }
+
+.review-submit-button { width: 100% !important; display: block !important; margin-left: 139px; }
+.review-back-button { margin-top: 10px; width: 100% !important; }
+.saved-mop-container { padding-left: 15px; }
+.align-payment-section { margin-left: 100px; }
+
+.easy-pay-checkbox,
+.paperless-checkbox,
+.one-time-review { margin-left: 20px; }
+
+.accnt-details-size { font-size: 0.875em; }
+.easy-pay-warning { margin-right: 20px; }
+.payment-review-details-wrapper { margin: auto; width: 235px !important; }
+
+.calendar-image {
+  background-image: url("https://webcdn.cox.com/ui/mybill/tsw_7/img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 35px 1px;
+  padding-left: 0;
+  background-size: auto;
+  display: inline;
+}
+
+.leaf-image {
+  background-image: url("https://webcdn.cox.com/ui/mybill/tsw_7/img/leaf.svg");
+  background-repeat: no-repeat;
+  background-position: 33px 2px;
+  padding-left: 0;
+  display: inline;
+}
+
+input[type="checkbox"]:not([disabled="disabled"]) + label { margin-bottom: 20px; }
+
+input[type="checkbox"]:not([disabled="disabled"]) + label.calendar-image:before,
+label.leaf-image:before { margin-right: 40px !important; }
+
+input[type="checkbox"]:not([disabled="disabled"]) + label.calendar-image span,
+label.leaf-image span { margin-top: -3px; width: 80% !important; display: inline; }
+
+.center-content { margin: auto; }
+.seprator { margin-top: -18px; }
+.service-address { margin-left: 125px; }
+.align-long-text { width: 74%; }
+
+#container input.review-submit-button.loading-wrapper-active[type="submit"] { width: 100% !important; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  input[type="checkbox"]:not([disabled="disabled"]) + label.calendar-image span {
+    margin-top: -3px;
+    width: 67.5% !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .review-back-button { margin-top: 10px; }
+  .review-submit-button { margin-left: 0; display: unset !important; }
+  .calendar-image { background-position: 35px 0; }
+  .leaf-image { background-position: 32px 1px; }
+
+  input[type="checkbox"]:not([disabled="disabled"]) + label.calendar-image span {
+    margin-top: -3px;
+    width: 75% !important;
+  }
+
+  input[type="checkbox"]:not([disabled="disabled"]) + label.leaf-image span {
+    margin-top: -3px;
+    width: 75% !important;
+    word-break: break-word;
+  }
+
+  .one-time-review span { margin-top: -3px; }
+  .align-payment-section { margin-left: 75px; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  input[type="checkbox"]:not([disabled="disabled"]) + label.calendar-image span,
+  label.leaf-image span { margin-top: 0; width: 80% !important; }
+
+  .service-address { margin-left: 0; }
+  .review-submit-button { margin-left: 0; display: unset !important; }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+  .review-submit-button { margin-left: 0 !important; display: unset !important; }
+}
+
+form.wrap-errors .error-wrapper {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 0;
+  position: relative;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+.errorLabel { color: var(--pay-color-error-alt); }
+
+.btn-tertiary,
+input.btn-tertiary[type="submit"],
+a.btn-tertiary {
+  color: var(--pay-color-black);
+  border: 2px solid var(--pay-color-primary);
+  background-color: var(--pay-color-white);
+  border-radius: var(--pay-radius-pill);
+  background-size: 24px 24px;
+}
+
+#link-activate-device { margin: 0 5px; }
+
+.review-buttons {
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+  .button {
+    display: block !important;
+    width: 100% !important;
+    margin-left: 145px;
+    min-width: 160px;
+    padding: 0 !important;
+
+    .button-base {
+      width: 100%;
+      font-family: var(--pay-font-medium);
+      font-size: 1em;
+      font-weight: var(--pay-font-weight-medium);
+    }
+  }
+}
+
+.review-buttons-back {
+  .button {
+    display: block !important;
+    width: 100% !important;
+    margin-left: 145px;
+    margin-bottom: 28px;
+    margin-top: -22px;
+    min-width: 160px;
+    padding: 0 !important;
+
+    .button-base {
+      width: 100%;
+      font-family: var(--pay-font-medium);
+      font-size: 1em;
+      font-weight: var(--pay-font-weight-medium);
+    }
+  }
+}
+
+#future-payment .business-payment-submit-btn .button .primary,
+.easy-pay .business-primary-btn .primary,
+#easypay-terms-modal-cb-primary-button {
+  border-radius: 10px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .review-buttons .button { margin-left: 0; min-width: 100%; }
+  .review-buttons-back .button { margin-left: 0; min-width: 100%; }
+}
+
+.modal-footer {
+  .button-base {
+    font-family: var(--pay-font-medium);
+    font-size: 1em !important;
+    font-weight: var(--pay-font-weight-medium) !important;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .modal-one-time-payment {
+    width: 800px !important;
+    overflow-x: hidden !important;
+    .modal-footer { justify-content: right; }
+  }
+}

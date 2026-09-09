@@ -1,0 +1,17 @@
+.trustly-error-header {
+  font-size: var(--pay-font-size-lg);
+  font-weight: var(--pay-font-weight-bold) !important;
+}
+
+.trustly-widget-error {
+  padding: 24px;
+  border-radius: var(--pay-radius-xl);
+  background-color: var(--pay-color-bg-statement);
+}
+
+.widget-try-again {
+  color: var(--pay-color-primary);
+  font-weight: var(--pay-font-weight-bold);
+  border: none;
+  background-color: var(--pay-color-bg-statement);
+}

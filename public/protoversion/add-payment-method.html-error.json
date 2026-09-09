@@ -1,0 +1,27 @@
+{
+  "page": {
+    "pageName": "add-payment-method",
+    "templateName": "AddPaymentMethodTemplate",
+    "displayHeader": false,
+    "displayFooter": false,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "sections": {
+      "payment": {
+        "headerText": "Add payment method",
+        "subHeaderText": "Payment methods",
+        "descriptionText": "How would you like to pay?",
+        "customerType": "residential",
+        "savedMop": null,
+        "showResponse": true,
+        "messages": {
+          "errorMessages": [
+            "There seems to be an issue with your authorization link. Please request a new one from the agent."
+          ],
+          "warningMessages": [],
+          "successMessages": []
+        }
+      }
+    }
+  }
+}

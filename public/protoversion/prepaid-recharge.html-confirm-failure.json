@@ -1,0 +1,56 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "prepaid-recharge",
+    "templateName": "PrepaidRechargeTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "confirm",
+        "headerText": "Payment failed",
+        "oktaLogin": true,
+        "navigateTo": "/resaccount/prepaid-home.html",
+        "prepaid": true,
+        "paymentConfirmDetails": {
+          "paymentStatus": "failed",
+          "enrolledInEasyPay": false,
+          "showPrint": false,
+          "alerts": [
+            {
+              "message": "<p>Sorry, we were unable to process your payment. Please check your payment details below and try again.</p>",
+              "iconType": "error",
+              "linkText": "chat with us",
+              "linkUrl": "/residential/contactus.html"
+            }
+          ],
+          "accountDetails": {
+            "accountNumber": "001 3410 105432101",
+            "serviceAddress": "875 N Michigan Ave, Chicago, IL 60611"
+          },
+          "paymentDetails": [
+            {
+              "statementCode": "001",
+              "serviceName": "StraightUp Internet",
+              "totalAmount": "50.00",
+              "status": "failed",
+              "type": "Visa",
+              "cclast4": "Visa ending in 6576",
+              "paymentProviderId": "1a2b3c4d",
+              "paymentDate": "12/01/2025"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

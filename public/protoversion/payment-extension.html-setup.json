@@ -1,0 +1,48 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "extend-payment",
+    "templateName": "ExtendPaySetupMopTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "setup-paymentdate",
+        "customerType": "residential",
+        "oktaLogin": true,
+        "headerText": "Request additional time to pay",
+        "secondaryHeaderText": "Can't pay today? We understand sometimes you need a little extra time. Let us know when you will be able to make a payment.",
+        "isprepaidCustomer": false,
+        "udoVariables": {
+          "channel": "cox:res:payments",
+          "pageName": "cox:res:payments:future-payment-setup",
+          "pageType": "payments",
+          "subSection": "cox:res:payments",
+          "businessUnit": "res:payments",
+          "purchaseStep": "payments",
+          "visitorLoginStatus": "link-based-auth",
+          "amountDue": null,
+          "amountPastDue": null,
+          "amountAttempted": null,
+          "amountPaid": null,
+          "eventNames": null,
+          "selfHelpName": null,
+          "formError": null
+        },
+        "navigateTo": "/mybill/home.html",
+        "maxCollectionDueDate": "2026-03-24",
+        "paymentDate": "",
+        "futurePayEligibilityError": ""
+      }
+    }
+  }
+}

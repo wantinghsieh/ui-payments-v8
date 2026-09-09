@@ -1,0 +1,46 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "prepaid-recharge",
+    "templateName": "PrepaidRechargeTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "setup-mop",
+        "headerText": "Make a payment",
+        "oktaLogin": true,
+        "hasFullIbillAccess": true,
+        "pageError": null,
+        "navigateTo": "/resaccount/prepaid-home.html",
+        "prepaid": true,
+        "notEligibleforPayment": true,
+        "alerts": [
+          {
+            "message": "You cannot recharge at this time as you have currently paid for more than 30 days of service for prepaid",
+            "iconType": "error"
+          }
+        ],
+        "paymentSetupDetails": {
+          "description": "Your StraightUp Internet service will be renewed for <strong>$50.00</strong>.",
+          "paymentDate": "12/01/2025"
+        },
+        "paymentRestrictions": {
+          "restrictBankPayment": true,
+          "restrictCardPayment": false,
+          "allPaymentRestricted": false
+        },
+        "savedMop": null
+      }
+    }
+  }
+}

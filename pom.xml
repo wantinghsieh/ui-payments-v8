@@ -1,0 +1,223 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cox.webstrategy</groupId>
+	<artifactId>com.cox.webstrategy.ui.payments-v8</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>payments</name>
+	<repositories>
+		<repository>
+			<id>repo.corp.cox.com-jcenter</id>
+			<name>repo.corp.cox.com-releases</name>
+			<url>https://repo.corp.cox.com/artifactory/jcenter</url>
+		</repository>
+		<repository>
+			<id>repo.corp.cox.com-mcentral</id>
+			<name>repo.corp.cox.com-releases</name>
+			<url>https://repo.corp.cox.com/artifactory/repo1</url>
+		</repository>
+		<repository>
+			<id>central</id>
+			<url>https://repo1.maven.org/maven2</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>repo-plugins-release</id>
+			<name>plugins-release</name>
+			<url>https://repo.corp.cox.com/artifactory/plugins-release</url>
+		</pluginRepository>
+		<pluginRepository>
+			<snapshots />
+			<id>repo-plugins-snapshots</id>
+			<name>plugins-snapshot</name>
+			<url>https://repo.corp.cox.com/artifactory/plugins-snapshot</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>central</id>
+			<url>https://repo1.maven.org/maven2</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<properties>
+		<build.version>${appname}</build.version>
+		<jenkins.version>${env.MAJOR_VERSION}.${env.MINOR_VERSION}.${env.BUILD_NUMBER}</jenkins.version>
+		<assembly.skipAssembly></assembly.skipAssembly>
+		<maven.install.skip></maven.install.skip>
+	</properties>
+	<build>
+		<plugins>
+			<plugin> 
+				<groupId>org.codehaus.mojo</groupId> 
+				<artifactId>properties-maven-plugin</artifactId> 
+				<version>1.0-alpha-2</version> 
+				<executions> 
+					<execution> 
+					<phase>initialize</phase> 
+					<goals> 
+						<goal>read-project-properties</goal> 
+					</goals> 
+					<configuration> 
+						<files> 
+						<file>${basedir}/build.properties</file> 
+						</files> 
+					</configuration> 
+					</execution> 
+				</executions> 
+			</plugin> 
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>target</directory>
+							<includes>
+            					<include>*</include>            					            					
+          					</includes>							
+							<followSymlinks>false</followSymlinks>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.github.eirslett</groupId>
+				<artifactId>frontend-maven-plugin</artifactId>
+				<!-- NB! Set <version> to the latest released version of frontend-maven-plugin, like in README.md -->
+				<version>1.15.0</version>
+				<executions>
+					<execution>
+						<id>install node and pnpm</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>install-node-and-pnpm</goal>
+						</goals>
+						<configuration>
+							<nodeVersion>v20.11.0</nodeVersion>
+							<npmVersion>10.2.4</npmVersion>
+           				    <pnpmVersion>8.15.4</pnpmVersion>
+                          	<environmentVariables><CI>false</CI></environmentVariables>
+						</configuration>
+					</execution>
+					<execution>
+						<!-- Optional configuration which provides for running any pnpm command -->
+						<configuration>
+							  <environmentVariables><CI>false</CI></environmentVariables>
+						</configuration>
+					</execution>					
+					<execution>
+						<id>pnpm install</id>
+						<goals>
+							<goal>pnpm</goal>
+						</goals>
+						<!-- Optional configuration which provides for running any pnpm command -->
+						<configuration>
+						    <arguments>install</arguments>
+							
+                            <environmentVariables><CI>false</CI></environmentVariables>
+						</configuration>
+					</execution>
+					<execution>
+						<id>pnpm run build</id>
+						<goals>
+							<goal>pnpm</goal>
+						</goals>
+						<configuration>
+							<arguments>run build  --jenkinsVersion=${jenkins.version} appname=${appname}</arguments>
+                            <environmentVariables><CI>false</CI></environmentVariables>
+						</configuration>
+					</execution>
+					<execution>
+						<id>pnpm run build-storybook</id>
+						<goals>
+							<goal>pnpm</goal>
+						</goals>
+						<configuration>
+							<arguments>run storybook:build</arguments>
+						</configuration>
+					</execution>
+
+					<execution>
+						<id>inject build info</id>
+						<goals>
+							<goal>pnpm</goal>
+						</goals>
+						<configuration>
+							<arguments>exec node scripts/inject-build-info.js jenkinsVersion=${jenkins.version}</arguments>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.5.1</version>
+				<executions>
+					<execution>
+						<id>make-bundles</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<!-- hardcoded until its resolved by ESCM  -->
+							<finalName>${project.artifactId}</finalName>
+							<!--<finalName>com.cox.webstrategy.ui.mobile</finalName>-->
+							<descriptors>
+								<descriptor>src/main/assembly/assembly.xml</descriptor>
+							</descriptors>
+							<attach>false</attach>
+						</configuration>
+					</execution>
+					<execution>
+						<id>make-prototype</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<!-- hardcoded until its resolved by ESCM  -->
+                          <finalName>${project.artifactId}.prototype</finalName>
+                            <!--<finalName>com.cox.webstrategy.ui.mobile.prototype</finalName>-->
+							<descriptors>
+								<descriptor>src/main/assembly/prototype.xml</descriptor>
+							</descriptors>
+							<attach>false</attach>
+						</configuration>
+					</execution>
+					<execution>
+						<id>make-storybook-static</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<finalName>${project.artifactId}.storybook-static</finalName>
+							<descriptors>
+								<descriptor>src/main/assembly/storybook-static.xml</descriptor>
+							</descriptors>
+							<attach>false</attach>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

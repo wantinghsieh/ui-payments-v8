@@ -1,0 +1,53 @@
+{
+  "udo": {},
+  "page": {
+    "pageName": "automatic-payments",
+    "templateName": "EasyPaySetupTemplate",
+    "displayHeader": false,
+    "displayFooter": false,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "payment": {
+        "pageName": "setup",
+        "isprepaidCustomer": false,
+        "pciChaseEncryptKeyJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/64100000000055/getkey.js",
+        "pciChaseEncryptJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/encryption.js",
+        "trustlyJs": "https://sandbox.trustly.one/start/scripts/trustly.js?accessId=",
+        "cardExpired": true,
+        "cardExpiration": "It appears that your card has expired. Make sure that your expiration date is correct. If your card has expired, please use another method of payment.",
+        "listOfYears": [
+          "2024",
+          "2025",
+          "2026",
+          "2027",
+          "2028",
+          "2029",
+          "2030",
+          "2031",
+          "2032",
+          "2033",
+          "2034",
+          "2035",
+          "2036",
+          "2037",
+          "2038"
+        ],
+        "paymentRestrictions": {
+          "restrictBankPayment": false,
+          "restrictCardPayment": false,
+          "allPaymentRestricted": false
+        },
+        "trustlyWidgetProps": {
+          "accessId": "Dwxws1XkP6WJUEswuadp",
+          "merchantId": "1305",
+          "paymentType": "Retrieval",
+          "merchantReference": ""
+        },
+        "savedMop": null
+      }
+    }
+  }
+}

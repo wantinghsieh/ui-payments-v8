@@ -1,0 +1,45 @@
+{
+  "page": {
+    "pageName": "review",
+    "templateName": "ReviewTemplate",
+    "displayHeader": false,
+    "displayFooter": false,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "sections": {
+      "payment": {
+        "headerText": "Make a payment",
+        "paymentReviewDetails": {
+          "serviceLinkText": "One-Time Payment",
+          "paymentReviewMethod": {
+            "methodData": {
+              "type": "visa",
+              "cardNumber": "Visa ending in XXXX",
+              "endDate": "Exp 11/2025",
+              "fullName": "FirstName Last Name"
+            },
+            "billingText": "Payment date: 06/01/2024",
+            "totalAmount": "145.99",
+            "amountPastDue": "0"
+          },
+          "oneTimePayment": {
+            "headerText": "One-Time Payment Terms of Service",
+            "oneTimePaymentData": "By clicking Submit, I authorize Cox Communications to initiate a one-time charge or debit entry in the amount indicated above on the credit card, debit card, check card or banking account I selected, as full or partial payment for services provided by Cox (plus applicable taxes, fees and surcharges). Payments returned to Cox due to insufficient funds will incur a non sufficient fund (NSF) fee of $25 or up to the maximum allowed by state law. The use of a paper or electronic check for payment is your acknowledgement that if your payment is returned, you expressly authorize your account to be electronically debited for the amount of the payment plus any applicable NSF fees."
+          },
+          "udoVars": {
+            "channel": "cox:res:payments",
+            "pageName": "cox:res:payments:make-payment-review",
+            "pageType": "payments",
+            "subSection": "cox:res:payments",
+            "businessUnit": "res:payments",
+            "purchaseStep": "payments",
+            "visitorLoginStatus": "link-based-auth",
+            "amountDue": "2",
+            "amountPastDue": "151",
+            "amountAttempted": "146"
+          }
+        }
+      }
+    }
+  }
+}

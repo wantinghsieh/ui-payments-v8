@@ -1,0 +1,30 @@
+.future-confirm-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pay-space-base);
+
+  .dynamic-banner .banner-link {
+    display: none;
+  }
+
+  .account-payment-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--pay-space-base);
+    padding: var(--pay-space-base) 0;
+
+    .details {
+      color: var(--cox-neutral-neutral-500-night-grey, var(--pay-color-text-primary));
+      font-size: var(--pay-font-size-base);
+      font-style: normal;
+      font-weight: var(--pay-font-weight-regular);
+      line-height: 23px; /* TOKEN-GAP: component-specific line-height, no token equivalent */
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .button-base {
+      width: 100%;
+    }
+  }
+}

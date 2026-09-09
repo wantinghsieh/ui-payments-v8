@@ -1,0 +1,41 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "prepaid-automatic-recharge",
+    "templateName": "PrepaidAutomaticRechargeTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "easyPay-statements",
+        "headerText": "EasyPay automatic payments",
+        "subTitle": "A safe, automatic, and recurrent payment program that allows you to pay your bill automatically each month.",
+        "oktaLogin": true,
+        "navigateTo": "/resaccount/prepaid-home.html",
+        "isprepaidCustomer": true,
+        "statements": [
+          {
+            "statementCode": "001",
+            "name": "StraightUp Internet",
+            "enrolled": false
+          }
+        ],
+        "alerts": [
+          {
+            "message": "Your scheduled payments have been cancelled and a confirmation email is on its way to your inbox.",
+            "iconType": "success"
+          }
+        ]
+      }
+    }
+  }
+}

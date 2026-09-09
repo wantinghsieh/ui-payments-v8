@@ -1,0 +1,46 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "prepaid-recharge",
+    "templateName": "PrepaidRechargeTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "setup-mop",
+        "headerText": "Make a payment",
+        "oktaLogin": true,
+        "hasFullIbillAccess": true,
+        "pageError": null,
+        "navigateTo": "/resaccount/prepaid-home.html",
+        "prepaid": true,
+        "notEligibleforPayment": false,
+        "alerts": [
+          {
+            "message": "<span data-automation-id=\"payment-restriction-alert-text\">We're sorry for the inconvenience, but online payments via credit or debit cards are not enabled on your account. Please make a payment in cash at any <a href=\"/aboutus/contact-us/cox-centers.html\">Cox Solutions Store</a>.<br> <br> For more information, please <a href=\"/residential/contactus.html\" class=\"chat-trigger\">chat with us</a>.</span>",
+            "iconType": "error"
+          }
+        ],
+        "paymentSetupDetails": {
+          "description": "Your StraightUp Internet service will be renewed for <strong>$50.00</strong>.",
+          "paymentDate": "12/01/2025"
+        },
+        "paymentRestrictions": {
+          "restrictBankPayment": true,
+          "restrictCardPayment": true,
+          "allPaymentRestricted": false
+        },
+        "savedMop": null
+      }
+    }
+  }
+}

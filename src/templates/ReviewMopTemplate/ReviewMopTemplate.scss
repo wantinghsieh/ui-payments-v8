@@ -1,0 +1,156 @@
+// REVIEW PAGE CONTAINER
+.review-payments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-payments-container .sub-container {
+  margin: 16px 0;
+  margin-bottom: 0 !important;
+}
+
+.review-payments-container .overview {
+  cursor: pointer;
+  font-weight: var(--pay-font-weight-bold);
+  color: var(--pay-color-business);
+  font-size: var(--pay-font-size-base);
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+// REVIEW PAGE SUB HEADERS
+.review-payments-container .sub-header {
+  font-size: var(--pay-font-size-lg);
+  font-style: normal;
+  font-weight: var(--pay-font-weight-medium);
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.review-payments-container .sub-header-label {
+  color: var(--pay-color-text-slate);
+  font-size: 13px;
+  font-weight: var(--pay-font-weight-regular);
+  line-height: 20px;
+}
+
+// REVIEW PAGE DESCRIPTIONS
+.review-payments-container .description { margin-bottom: 0; }
+
+// STATEMENT CONTAINER
+.review-payments-container .statement-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+// REVIEW PAGE CHECKBOX
+.review-payments-container .custom-checkbox {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+/* hide native checkbox */
+.review-payments-container .custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* custom check box */
+.review-payments-container .custom-checkbox .checkmark {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border: 2px solid var(--pay-color-border);
+  border-radius: 5px;
+  background-color: var(--pay-color-white);
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.review-payments-container .custom-checkbox .checkmark:hover {
+  outline: 1px solid var(--pay-color-info);
+  outline-offset: 3px;
+}
+
+.review-payments-container .custom-checkbox-error .checkmark {
+  border: 2px solid var(--pay-color-error-alt) !important;
+}
+
+/* checked state: background and border */
+.review-payments-container .custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: var(--pay-color-primary);
+  border-color: var(--pay-color-primary);
+}
+
+/* checkmark centered, white tick */
+.review-payments-container .custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 5px;
+  height: 12px;
+  border: solid var(--pay-color-white);
+  border-width: 0 1.6px 1.6px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  box-sizing: content-box;
+}
+
+// REVIEW LINK
+.review-payments-container .modal-link {
+  color: var(--pay-color-primary);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.review-payments-container .modal-link:hover { text-decoration: none; }
+
+// ERROR
+.review-payments-container .otp-terms-and-service-label { margin-bottom: 0; }
+
+.review-payments-container .error-container {
+  align-items: center;
+  color: var(--pay-color-error-alt);
+  display: flex;
+  font-size: var(--pay-font-size-base);
+  gap: 0.25em;
+  margin: 0 !important;
+}
+
+.review-payments-container .error-banner-icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  top: -0.5px;
+}
+
+// REVIEW BUTTONS
+.review-payments-container .button { padding: 3px; margin: 0; }
+.review-payments-container .button .align-center { margin: 0 !important; }
+
+@media screen and (max-width: 768px) {
+  .review-payments-container .button {
+    width: 100%;
+    min-width: none;
+    max-width: none;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .button-group { display: block; }
+}

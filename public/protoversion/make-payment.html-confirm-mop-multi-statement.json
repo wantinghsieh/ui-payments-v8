@@ -1,0 +1,85 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "one-time-payment",
+    "templateName": "ConfirmTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "confirm",
+        "oktaLogin": true,
+        "headerText": "Thank you for your payment.",
+        "notEligibleforPayment": false,
+        "navigateTo": "/ibill/home.html",
+        "prepaid": false,
+        "paymentConfirmDetails": {
+          "paymentStatus" : "success",
+          "messages": {
+            "success": "You're all set. We'll make your payment with the details below.",
+            "failed" : ""
+          },
+          "accountDetails": {
+            "accountNumber": "001 3410 105432",
+            "serviceAddress": "875 N Michigan Ave, Chicago, IL, 60611"
+          },
+          "paymentMethod": {
+            "type": "bank",
+            "cclast4": "Wells Fargo ending in 6576",
+            "paymentProviderId": "102000076"
+          },
+          "billing": {
+            "paymentAmount": "106.31",
+            "paymentDate": "10/28/2025"
+          },
+          "paymentDetails": [
+            {
+              "statementCode": "001",
+              "serviceName": "Internet",
+              "totalAmount": "55.06",
+              "confirmation": "ICKX5C",
+              "status": "Succeeded"
+            },
+            {
+              "statementCode": "002",
+              "serviceName": "Cox Mobile",
+              "totalAmount": "51.25",
+              "confirmation": "KZUH5Z",
+              "status": "Succeeded"
+            }
+          ],
+          "paymentDetailsInfo": null,
+          "paymentConfirmMethod": null
+        },
+        "populateMiniSnapshot": {
+          "accountInfo": "0110 101589101",
+          "subscribedServicesAsString": "Internet, TV, Voice",
+          "billingOverview": "/ibill/home.html",
+          "serviceAddress": {
+            "addressLine1": "Apt 15",
+            "addressLine2": "145 Test Test23",
+            "addressLine3": "Macon, GA 31217",
+            "city": "Macon",
+            "state": "GA",
+            "zipCode5": "31217",
+            "zipCode4": "2390"
+          },
+          "services": "/resaccount/home.html",
+          "moveMyService": "/residential/move.html?campcode=account_dropdown_02202023"
+        },
+        "coxAppContent": {
+          "url": "/content/experience-fragments/cox/residential/react/my_account/support/cox-app-download/cox-app-download-desktop-mobile.model.json"
+        }
+      }
+    }
+  }
+}

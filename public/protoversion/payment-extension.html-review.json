@@ -1,0 +1,42 @@
+{
+	"udo": {
+		"categorySubscribed": [
+			"Internet"
+		]
+	},
+	"page": {
+		"pageName": "extend-payment",
+		"templateName": "ReviewTemplate",
+		"displayHeader": true,
+		"displayFooter": true,
+		"minimalHeader": false,
+		"minimalFooter": false,
+		"displayChat": true,
+		"chatContent": "Care",
+		"sections": {
+			"displayLeftNav": true,
+			"payment": {
+				"headerText": "Review details and submit payment extension",
+				"pageName": "review",
+				"oktaLogin": true,
+				"paymentReviewDetails": {
+					"accountDetails": {
+						"accountNumber": "001 3410 105432101",
+						"serviceAddress": "875 N Michigan Ave, Chicago, IL 60611"
+					},
+					"paymentExtensionDate": "06/24/2026",
+					"minimumAmountDue": "106.31"
+				},
+				"navigateTo": "/ibill/home.html",
+				"messages": {
+					"warningMessages": []
+				},
+				"termsAndConditions": {
+					"headerText": "Payment Extension Terms of Service",
+					"termsAndConditionsText": "<p>By clicking Submit, I promise to pay the amount indicated above on the date indicated above to postpone scheduled service interruption.  The payment extension request is NOT a confirmation of payment and will not stop or delay service interruption.  \"Payment extension\" date must be before interruption or disconnection date communicated to you by Cox.  To avoid any service disruption you must visit cox.com on or before the \"payment extension\" date before 5 PM ET and complete payment.  If you do not make a payment by 5 PM ET on the \"payment extension\" date, collections activity will begin again and your account will be interrupted or disconnected on the date indicated in collections communications from Cox.  Late payments subject to additional fees associated with making a late payment. © 2017 Cox Communications.  All rights reserved.</p>"
+				},
+				"prepaid": false
+			}
+		}
+	}
+}

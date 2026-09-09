@@ -1,0 +1,58 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "prepaid-recharge",
+    "templateName": "PrepaidRechargeTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "confirm",
+        "headerText": "Thank you for your payment.",
+        "oktaLogin": true,
+        "navigateTo": "/resaccount/prepaid-home.html",
+        "prepaid": true,
+        "paymentConfirmDetails": {
+          "paymentStatus": "success",
+          "enrolledInEasyPay": false,
+          "showPrint": true,
+          "alerts": [
+            {
+              "message": "You're all set. We'll make your payment with the details below.",
+              "iconType": "success"
+            }
+          ],
+          "accountDetails": {
+            "accountNumber": "001 3410 105432101",
+            "serviceAddress": "875 N Michigan Ave, Chicago, IL 60611"
+          },
+          "paymentDetails": [
+            {
+              "statementCode": "001",
+              "serviceName": "StraightUp Internet",
+              "totalAmount": "50.00",
+              "confirmation": "ABCDEFG",
+              "status": "success",
+              "type": "Visa",
+              "cclast4": "Visa ending in 6576",
+              "paymentProviderId": "1a2b3c4d",
+              "paymentDate": "12/01/2025"
+            }
+          ]
+        },
+        "coxAppContent": {
+          "url": "/content/experience-fragments/cox/residential/react/my_account/support/cox-app-download/cox-app-download-desktop-mobile.model.json"
+        }
+      }
+    }
+  }
+}

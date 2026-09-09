@@ -1,0 +1,86 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "automatic-payments-confirm",
+    "templateName": "EasyPaySetupTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "confirm",
+        "customerType": "residential",
+        "oktaLogin": true,
+        "headerText": "EasyPay enrollment failed.",
+        "description": null,
+        "isprepaidCustomer": false,
+        "navigateTo": "/ibill/home.html",
+        "udoVariables": {
+          "channel": "cox:res:payments",
+          "pageName": "cox:res:payments:automatic-payments-setup",
+          "pageType": "payments",
+          "subSection": "cox:res:payments",
+          "businessUnit": "res:payments",
+          "purchaseStep": "payments",
+          "visitorLoginStatus": "link-based-auth",
+          "amountDue": null,
+          "amountPastDue": null,
+          "amountAttempted": null,
+          "amountPaid": null,
+          "eventNames": null,
+          "selfHelpName": null,
+          "formError": null
+        },
+        "paymentConfirmDetails": {
+          "paymentStatus": "partial-success",
+          "messages": {
+            "errorMessages": [
+              "Sorry, we had trouble processing some of your enrollments. Please check your payment details below."
+            ],
+            "warningMessages": [],
+            "successMessages": []
+          },
+          "paymentDetailsInfo": {
+            "headerText": "EasyPay enrollment failed.",
+            "description": null
+          },
+          "accountDetails": {
+            "accountNumber": "001 3410 105432",
+            "serviceAddress": "875 N Michigan Ave, Chicago, IL, 60611"
+          },
+          "paymentMethod": {
+            "type": "bank",
+            "cclast4": "Wells Fargo ending in 6576",
+            "paymentProviderId": "102000076"
+          },
+          "paymentDetails": [
+            {
+              "statementCode": "001",
+              "serviceName": "Internet",
+              "totalAmount": "55.06",
+              "status": "Failed",
+              "nextPaymentDate": "Dec 5 2025"
+            },
+            {
+              "statementCode": "002",
+              "serviceName": "Cox Mobile",
+              "totalAmount": "51.25",
+              "confirmation": "ABSDIDKDIFIDL",
+              "status": "Succeeded",
+              "nextPaymentDate": "Dec 5 2025"
+            }
+          ]
+        },
+        "coxAppContent": null
+      }
+    }
+  }
+}

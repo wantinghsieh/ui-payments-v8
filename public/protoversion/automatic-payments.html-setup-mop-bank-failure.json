@@ -1,0 +1,130 @@
+{
+ "udo": {
+  "categorySubscribed": [
+   "Internet"
+  ]
+ },
+ "page": {
+  "pageName": "automatic-payments",
+  "templateName": "EasyPaySetupTemplate",
+  "displayHeader": true,
+  "displayFooter": true,
+  "minimalHeader": false,
+  "minimalFooter": false,
+  "chatContent": "Care",
+  "displayChat": true,
+  "sections": {
+   "displayLeftNav": true,
+   "payment": {
+    "pageName": "setup",
+    "customerType": "residential",
+    "oktaLogin": true,
+    "hasFullIbillAccess": true,
+    "isprepaidCustomer": false,
+    "udoVariables": {
+     "channel": "cox:res:payments",
+     "pageName": "cox:res:payments:automatic-payments-setup",
+     "pageType": "payments",
+     "subSection": "cox:res:payments",
+     "businessUnit": "res:payments",
+     "purchaseStep": "payments",
+     "visitorLoginStatus": "link-based-auth",
+     "amountDue": null,
+     "amountPastDue": null,
+     "amountAttempted": null,
+     "amountPaid": null,
+     "eventNames": null,
+     "selfHelpName": null,
+     "formError": null
+    },
+    "pciChaseEncryptKeyJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/64100000000055/getkey.js",
+    "pciChaseEncryptJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/encryption.js",
+    "trustlyJs": "https://sandbox.trustly.one/start/scripts/trustly.js?accessId=",
+    "cardExpiration": "It appears that your card has expired. Make sure that your expiration date is correct. If your card has expired, please use another method of payment.",
+    "listOfYears": [
+     "2024",
+     "2025",
+     "2026",
+     "2027",
+     "2028",
+     "2029",
+     "2030",
+     "2031",
+     "2032",
+     "2033",
+     "2034",
+     "2035",
+     "2036",
+     "2037",
+     "2038"
+    ],
+    "navigateTo": "/ibill/home.html",
+    "easyPayEligibilityError": "",
+    "paymentRestrictions": {
+     "restrictBankPayment": false,
+     "restrictCardPayment": false,
+     "allPaymentRestricted": false
+    },
+    "trustlyWidgetProps": {
+     "accessId": "Dwxws1XkP6WJUEswuadp",
+     "merchantId": "1305",
+     "paymentType": "Retrieval",
+     "merchantReference": ""
+    },
+    "trustlyMethodApproval": {
+     "approvalStatus": false,
+     "message": "We couldn’t verify this bank account for payments. Please try a different bank account or use a credit card instead."
+    },
+    "savedMop": [
+     {
+      "mopId": "1",
+      "type": "BANK",
+      "name": "Wells Fargo ending in 6576",
+      "classType": "bank",
+      "lastFourDigits": "6576",
+      "paymentProviderId": "102000076",
+      "isDefaultMop": "true"
+     },
+     {
+      "mopId": "2",
+      "type": "BANK",
+      "name": "Chase ending in 6463",
+      "classType": "bank",
+      "lastFourDigits": "6463",
+      "paymentProviderId": "102001017",
+      "isDefaultMop": "false"
+     },
+     {
+      "mopId": "3",
+      "type": "BANK",
+      "name": "Bank of America ending in 3254",
+      "classType": "bank",
+      "lastFourDigits": "3254",
+      "isDefaultMop": "false",
+      "paymentProviderId": "051000017"
+     },
+     {
+      "mopId": "4",
+      "type": "CARD",
+      "name": "Visa ending in 6576",
+      "classType": "visa",
+      "lastFourDigits": "6576",
+      "disabled": false,
+      "isDefaultMop": "false",
+      "expiringSoon": false
+     },
+     {
+      "mopId": "5",
+      "type": "CARD",
+      "name": "MasterCard ending in 6463",
+      "classType": "mastercard",
+      "lastFourDigits": "6463",
+      "disabled": true,
+      "isDefaultMop": "false",
+      "expiringSoon": false
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,83 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "future-payment-confirm",
+    "templateName": "FuturePayConfirmTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "confirm",
+        "customerType": "residential",
+        "oktaLogin": true,
+        "headerText": "Thank you for future payment",
+        "description": "You will be charged on your monthly payment due date.",
+        "isprepaidCustomer": false,
+        "navigateTo": "/ibill/home.html",
+        "udoVariables": {
+          "channel": "cox:res:payments",
+          "pageName": "cox:res:payments:automatic-payments-setup",
+          "pageType": "payments",
+          "subSection": "cox:res:payments",
+          "businessUnit": "res:payments",
+          "purchaseStep": "payments",
+          "visitorLoginStatus": "link-based-auth",
+          "amountDue": null,
+          "amountPastDue": null,
+          "amountAttempted": null,
+          "amountPaid": null,
+          "eventNames": null,
+          "selfHelpName": null,
+          "formError": null
+        },
+        "futurePayConfirmDetails": {
+          "paymentStatus": "success",
+          "messages": {
+            "successMessage": "Thank you for your future payment. Your future payment is scheduled for December 22, 2025."
+          },
+          "paymentDetailsInfo": {
+            "headerText": "You are all set. Thank you for enrolling in EasyPay.",
+            "description": "You will be charged on your monthly payment due date."
+          },
+          "accountDetails": {
+            "accountNumber": "001 3410 105432101",
+            "serviceAddress": "875 N Michigan Ave, Chicago, IL 60611"
+          },
+          "paymentMethod": {
+            "methodData": {
+              "type": "bank",
+              "cardNumber": "Wells Fargo ending in 6576",
+              "paymentProviderId": "102000076"
+            },
+            "type": "bank",
+            "cclast4": "Wells Fargo ending in 6576"
+          },
+          "billing": {
+            "paymentAmount": "55.06",
+            "paymentDate": "03/28/2026"
+          },
+          "paymentDetails": {
+            "statementCode": "001",
+            "serviceName": "Internet",
+            "totalAmount": "55.06",
+            "confirmation": "ABSDIDKDIFIDL",
+            "status": "Succeeded",
+            "nextPaymentDate": "Dec 5 2025"
+          }
+        },
+        "coxAppContent": {
+          "url": "/content/experience-fragments/cox/residential/react/my_account/support/cox-app-download/cox-app-download-desktop-mobile.model.json"
+        }
+      }
+    }
+  }
+}

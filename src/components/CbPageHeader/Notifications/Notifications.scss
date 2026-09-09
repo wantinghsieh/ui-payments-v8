@@ -1,0 +1,45 @@
+@import "../CbPageHeader.scss";
+
+@mixin important-text {
+  background-color: var(--pay-color-bg-page);
+  padding-top: 3px;
+  padding-bottom: 2px;
+
+  ul {
+    margin: 0;
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      padding-left: 20px !important;
+    }
+  }
+
+  ul li:hover,
+  ul li:focus { list-style: none; }
+
+  a {
+    color: var(--pay-color-black);
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    color: var(--pay-color-black);
+    text-decoration: none;
+  }
+}
+
+.notificationIconBody {
+  @include important-text;
+  width: 22.5rem;
+  display: block;
+  position: absolute;
+  z-index: 999;
+  left: -17.5rem;
+  top: 8px;
+}
+
+.mobile-view { @include important-text; }
+
+.notificationPopover { position: absolute; }

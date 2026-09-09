@@ -1,0 +1,183 @@
+// -------------------- COMMON STYLES --------------------
+
+#future-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#future-payment .navigation-back { padding-bottom: 7px; }
+
+#future-payment .header-text {
+  font-size: var(--pay-font-size-xl);
+  font-style: normal;
+  font-weight: var(--pay-font-weight-medium);
+  line-height: 34px;
+  margin-bottom: 4px;
+}
+
+#future-payment .sub-header-text {
+  font-size: var(--pay-font-size-lg);
+  font-style: normal;
+  font-weight: var(--pay-font-weight-medium);
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  margin-bottom: 0;
+}
+
+#future-payment .form-radio-label span,
+#future-payment .body-header {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: var(--pay-font-weight-medium);
+  line-height: 22px;
+  letter-spacing: -0.36px;
+}
+
+#future-payment .body-text {
+  font-size: var(--pay-font-size-base);
+  font-style: normal;
+  font-weight: var(--pay-font-weight-regular);
+  line-height: 23px;
+  margin-bottom: 0;
+}
+
+#future-payment .label-sub-text {
+  color: var(--pay-color-text-slate);
+  display: flex;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: var(--pay-font-weight-regular);
+  line-height: 20px;
+  margin-left: 36px;
+  margin-top: 4px;
+}
+
+// -------------------- SETUP TEMPLATE STYLES --------------------
+#future-payment-setup-container label.form-radio-label::before,
+#future-payment-setup-container .radio-button-title,
+#future-payment-setup-container .form-label {
+  display: none !important;
+}
+
+#future-payment-setup-container .form-radio-label { margin: 0 !important; }
+
+#future-payment-setup-container .input.responsive-size {
+  margin-left: 10px;
+  padding: 12px 40px 12px 20px;
+}
+
+#future-payment-setup-container .future-payment-setup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.single-statement-label {
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: var(--pay-font-weight-medium) !important;
+  line-height: 24px !important;
+  margin-bottom: 0;
+}
+
+.disabled-single-statement-label { color: var(--pay-color-text-muted); }
+
+#future-payment-setup-container .statement-radio-button-card {
+  align-items: center;
+  border: 1px solid var(--pay-color-border-muted);
+  border-radius: var(--pay-radius-xl);
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+#future-payment-setup-container .selected-statement-radio-button-card {
+  border: 3px solid var(--pay-color-accent-blue);
+}
+
+#future-payment-setup-container .error-statement-radio-button-card {
+  border: 1px solid var(--pay-color-error-alt);
+}
+
+#future-payment-setup-container .disable-selected-statement-radio-button-card {
+  border: 3px solid var(--pay-color-border);
+}
+
+#future-payment-setup-container .disabled-modal-pop-up-button { flex-shrink: 0; }
+
+#future-payment-setup-container .statement-radio-button {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+#future-payment-setup-container .statement-price {
+  color: var(--pay-color-business);
+  font-size: 18px;
+  font-weight: var(--pay-font-weight-bold);
+}
+
+#future-payment-setup-container .statement-details-container {
+  background: var(--pay-color-bg-statement);
+  border-radius: var(--pay-radius-xl);
+  margin-top: 4px;
+  padding: 16px 64px;
+}
+
+@media screen and (max-width: 700px) {
+  #future-payment-setup-container .statement-details-container { padding: 16px 24px; }
+}
+
+#future-payment-setup-container .radio-group-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+#future-payment-setup-container .radio-button-container { display: flex; gap: 12px; }
+
+#future-payment-setup-container .radio-button-container .form-radio-label span {
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: var(--pay-font-weight-regular) !important;
+  line-height: 24px !important;
+  margin-bottom: 0;
+}
+
+#future-payment-setup-container .add-margin .form-options-radio-container { margin-bottom: 40px; }
+
+.future-payment-modal-statement-card {
+  padding: 24px 28px;
+  background: var(--pay-color-bg-page);
+  border-radius: var(--pay-radius-xl);
+  margin: 6px 0 0 0;
+}
+
+#future-payment-setup-container .other-amount-input-container { display: flex; flex-direction: column; }
+
+#future-payment-setup-container .other-amount-input-container input {
+  padding: 8px 40px 8px 20px;
+  border: 2px solid var(--pay-color-border);
+  border-radius: 15px;
+  outline: none;
+}
+
+#future-payment-setup-container .custom-radio { flex-shrink: 0; }
+
+#future-payment-setup-container .other-amount-input-container .text-input-error {
+  border: 2px solid var(--pay-color-error);
+}
+
+#future-payment-setup-container .other-amount-input-container .text-input-error:focus {
+  outline: 1px solid var(--pay-color-error-alt);
+}
+
+#future-payment-setup-container .submit-button { text-align: left; }
+
+@media (max-width: 621px) {
+  #future-payment-setup-container .add-margin .form-options-radio-container { margin-bottom: 60px; }
+}

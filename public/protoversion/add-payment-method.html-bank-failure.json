@@ -1,0 +1,27 @@
+{
+  "page": {
+    "pageName": "add-payment-method",
+    "templateName": "AddPaymentMethodTemplate",
+    "displayHeader": false,
+    "displayFooter": false,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "sections": {
+      "payment": {
+        "headerText": "Add payment method",
+        "subHeaderText": "Payment methods",
+        "descriptionText": "How would you like to pay?",
+        "customerType": "residential",
+        "savedMop": null,
+        "showResponse": true,
+        "messages": {
+          "errorMessages": [
+            "We couldn’t verify this bank account for payments. Please try a different bank account or use a credit card instead."
+          ],
+          "warningMessages": [],
+          "successMessages": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "page": {
+      "pageName": "paymentError",
+      "templateName": "PaymentErrorTemplate",
+      "displayHeader": false,
+      "displayFooter": false,
+      "minimalHeader": false,
+      "minimalFooter": false,
+      "sections": {
+        "paymentError": {
+          "title": "Make a payment",
+          "errorCode": "UNKNOWN_ERROR",
+          "errorMessage": "Something went wrong. Please ask the agent for a new link so you can try again."
+        },
+        "udoVars": {
+          "channel": "cox:res:payments",
+          "pageName": "cox:res:payments:make-payment-error",
+          "pageType": "payments",
+          "subSection": "cox:res:payments",
+          "businessUnit": "res:payments",
+          "purchaseStep": "payments",
+          "visitorLoginStatus": "loggedout",
+          "eventNames": "formError",
+          "selfHelpName": "payments:EXPIRED",
+          "formError": "EXPIRED"
+        }
+      }
+    }
+  }

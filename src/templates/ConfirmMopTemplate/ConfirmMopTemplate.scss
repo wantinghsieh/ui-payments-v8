@@ -1,0 +1,34 @@
+.success-text { color: var(--pay-color-success); }
+.error-text   { color: var(--pay-color-error); }
+
+.viewAll {
+  font-weight: var(--pay-font-weight-bold);
+  color: var(--pay-color-business);
+  cursor: pointer;
+}
+
+.sub-header-text {
+  font-weight: var(--pay-font-weight-medium);
+  font-size: var(--pay-font-size-xl);
+  line-height: 34px;
+}
+
+.payment-done .button {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+}
+
+.payment-header { font-weight: var(--pay-font-weight-medium) !important; }
+
+#payment-confirm.cb-customer .text-button.text-center { padding: 12px 0 !important; }
+
+@media screen and (max-width: 767px) {
+  .button-base { width: 90%; }
+  .print-trigger { display: none; }
+}
+
+@media print {
+  .print-trigger { display: none; }
+  .page-layout-cb { padding: 10px !important; }
+  .header-with-title-desc { padding: 1rem !important; }
+}

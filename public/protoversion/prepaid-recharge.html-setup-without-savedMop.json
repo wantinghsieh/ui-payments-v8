@@ -1,0 +1,46 @@
+{
+  "udo": {
+    "categorySubscribed": ["Internet"]
+  },
+  "page": {
+    "pageName": "prepaid-recharge",
+    "templateName": "PrepaidRechargeTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "setup-mop",
+        "headerText": "Make a payment",
+        "oktaLogin": true,
+        "hasFullIbillAccess": true,
+        "pageError": null,
+        "navigateTo": "/resaccount/prepaid-home.html",
+        "prepaid": true,
+        "pciChaseEncryptKeyJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/64100000000055/getkey.js",
+        "pciChaseEncryptJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/encryption.js",
+        "cardExpiration": null,
+        "notEligibleforPayment": false,
+        "paymentEligibilityErrorMessage": null,
+        "paymentSetupDetails": {
+          "description": "Your StraightUp Internet service will be renewed for <strong>$50.00</strong>.",
+          "paymentDate": "12/01/2025"
+        },
+        "paymentRestrictions": {
+          "restrictBankPayment": true,
+          "restrictCardPayment": false,
+          "allPaymentRestricted": false
+        },
+        "listOfYears": [
+          "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032",
+          "2033", "2034", "2035", "2036", "2037", "2038", "2039"
+        ],
+        "savedMop": null
+      }
+    }
+  }
+}

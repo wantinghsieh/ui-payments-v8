@@ -1,0 +1,69 @@
+#easy-pay-confirm .confirm-heading {
+  font-size: var(--pay-font-size-xl);
+  line-height: 34px;
+  font-weight: var(--pay-font-weight-medium);
+  text-align: center;
+}
+
+#easy-pay-confirm .confirm-container {
+  padding: 50px;
+  border-radius: 30px;
+  background: var(--cox-neutral-neutral-100-white, var(--pay-color-white));
+}
+
+// The inner CardMop (#mop-card.mop-container) already renders its own
+// border + radius, so the wrapper must NOT add a second one — that
+// produced a double border (most visible on mobile). Wrapper is layout-only.
+#easy-pay-confirm .saved-mop-container-confirm {
+  border-radius: var(--pay-radius-xl);
+}
+
+#easy-pay-confirm.custom-secondary-btn { padding-left: 0 !important; }
+
+#easy-pay-confirm .button-grp-wrapper { display: flex; }
+
+.wellsfargo {
+  background: url("../../../public/images/wells-fargo.svg");
+  width: 100%;
+  height: 40px;
+  position: relative;
+  left: 10px;
+  background-repeat: no-repeat;
+}
+
+.card-number-format {
+  font-size: 18px;
+  font-weight: var(--pay-font-weight-medium);
+  line-height: 24px;
+  position: absolute;
+  top: 8px !important;
+  white-space: normal;
+}
+
+.card-number-left { padding-left: 3.5rem; }
+
+#easy-pay-confirm .saved-payment-content {
+  white-space: nowrap;
+  align-items: center;
+  display: flex;
+  padding: 1rem 1.25rem;
+}
+
+#easy-pay-confirm .saved-mop-container-confirm .saved-mop .saved-mop-details > span {
+  word-break: break-word;
+  white-space: normal !important;
+}
+
+.font-weight-700 { font-weight: var(--pay-font-weight-bold); }
+
+@media (max-width: 430px) {
+  #easy-pay-confirm .signin-submit-btn .button {
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  #easy-pay-confirm .display-mbl-gap {
+    gap: 1.25rem;
+    display: grid;
+  }
+}

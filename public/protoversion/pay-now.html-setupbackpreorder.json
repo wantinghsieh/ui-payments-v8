@@ -1,0 +1,40 @@
+{
+  "page": {
+    "pageName": "setup",
+    "templateName": "SetupTemplate",
+    "displayHeader": false,
+    "displayFooter": false,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "sections": {
+      "payment": {
+        "headerText": "Make a payment",
+        "pciChaseEncryptKeyJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/64100000000055/getkey.js",
+        "pciChaseEncryptJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/encryption.js",
+        "cardExpiration": "It appears that your card has expired. Make sure that your expiration date is correct. If your card has expired, please use another method of payment.",
+        "pageError": null,
+        "paymentSetupDetails": {
+          "serviceLinkText": "One-Time Payment",
+          "description": "Your payment amount of <strong>$145.99</strong> will be processed when your device ships.",
+          "paymentAmount": "145.99",
+          "udoVars": {
+            "channel": "cox:res:payments",
+            "pageName": "cox:res:payments:make-payment-setup",
+            "pageType": "payments",
+            "subSection": "cox:res:payments",
+            "businessUnit": "res:payments",
+            "purchaseStep": "payments",
+            "visitorLoginStatus": "link-based-auth",
+            "amountDue": "2",
+            "amountPastDue": "151"
+          }
+        },
+        "paymentRestrictions":{
+          "restrictBankPayment": false,
+          "restrictCardPayment": false
+        },
+        "listOfYears": ["2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038"]
+      }
+    }
+  }
+}

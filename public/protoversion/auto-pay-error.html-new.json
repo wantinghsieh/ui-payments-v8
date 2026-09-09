@@ -1,0 +1,18 @@
+{
+  "udo": {},
+  "page": {
+    "pageName": "paymentError",
+    "templateName": "PaymentErrorTemplate",
+    "displayHeader": false,
+    "displayFooter": false,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "sections": {
+      "paymentError": {
+        "title": "Link no longer active",
+        "errorCode": "UNKNOWN_ERROR",
+        "errorMessage": "It looks like the link you used may have expired, is invalid, or has already been used. Don't worry, you can still access your account by signing in directly.<br/><a href='/payments/automatic-payments.html' class='text-decoration-none'>Sign in</a>"
+      }
+    }
+  }
+}

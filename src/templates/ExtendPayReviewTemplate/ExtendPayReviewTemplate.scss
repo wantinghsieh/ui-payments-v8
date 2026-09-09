@@ -1,0 +1,40 @@
+#extend-pay-container .sub-header {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    gap: 4px;
+    letter-spacing: -.4px;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+#extend-pay-container #account-details-container,
+#extend-pay-container #payment-extension-date-container,
+#extend-pay-container #minimum-amount-due-container,
+#extend-pay-container #tnc-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+#extend-pay-container .body-content {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 4px;
+}
+
+#extend-pay-container #review-button-container {
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    #extend-pay-container #review-button-container {
+        display: flex;
+        gap: 24px;
+    }
+}

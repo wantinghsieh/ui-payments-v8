@@ -1,0 +1,23 @@
+.rmd-modal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .rmd-prompt {
+    font-size: 22px;
+    font-weight: var(--pay-font-weight-medium);
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: -0.44px;
+  }
+
+  .rmd-card {
+    align-items: center;
+    background-color: var(--pay-color-bg-page);
+    border-radius: var(--pay-radius-xl);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 16px 28px;
+  }
+}

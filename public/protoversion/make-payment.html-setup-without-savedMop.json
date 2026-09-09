@@ -1,0 +1,73 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "one-time-payment",
+    "templateName": "SetupTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "setup-mop",
+        "headerText": "Make a payment",
+        "oktaLogin": true,
+        "hasFullIbillAccess": true,
+        "pageError": null,
+        "navigateTo": "/ibill/home.html",
+        "pciChaseEncryptKeyJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/64100000000055/getkey.js",
+        "pciChaseEncryptJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/encryption.js",
+        "trustlyJs": "https://sandbox.trustly.one/start/scripts/trustly.js?accessId=",
+        "trustlyWidgetProps": {
+          "accessId": "Dwxws1XkP6WJUEswuadp",
+          "merchantId": "1305",
+          "paymentType": "Retrieval",
+          "merchantReference": ""
+        },
+        "cardExpiration": null,
+        "notEligibleforPayment": false,
+        "paymentEligibilityErrorMessage": null,
+        "paymentRestrictions": {
+          "restrictBankPayment": false,
+          "restrictCardPayment": false,
+          "allPaymentRestricted": false
+        },
+        "listOfYears": [
+          "2025",
+          "2026",
+          "2027",
+          "2028",
+          "2029",
+          "2030",
+          "2031",
+          "2032",
+          "2033",
+          "2034",
+          "2035",
+          "2036",
+          "2037",
+          "2038",
+          "2039"
+        ],
+        "paymentSetupDetails": {
+          "havingPastDue": false
+        },
+        "paymentDateDetails": {
+          "startDate": "10/08/2025",
+          "dueDate": "10/23/2025",
+          "calendarSelectionDate": "10/28/2025",
+          "paymentMadeToday": false,
+          "headerText": "When would you like to make your one time payment of $222.29 on 2 statements?"
+        },
+        "savedMop": null
+      }
+    }
+  }
+}

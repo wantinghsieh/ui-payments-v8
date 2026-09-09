@@ -1,0 +1,140 @@
+{
+    "currentYear": "2026",
+    "contactCustomerService": "Contact Customer Service",
+    "contactCustomerNumber": "1-888-876-3882",
+    "contactUs": "Contact Us",
+    "chatNow": "Chat Now",
+    "contactSales": "Contact Sales",
+    "contactSalesNumber": "1-844-201-8018",
+    "commonTasksTitle": "Common Tasks",
+    "helpTitle": "Help",
+    "aboutUsTitle": "About Us",
+    "socialTitle": "Social",
+    "legalTitle": "Legal",
+    "companiesTitle": "Companies",
+    "partnersTitle": "Partners",
+    "Help": [
+        {
+            "linkName": "Product Support",
+            "linkUrl": "https://www.cox.com/business/support/home.html",
+            "tab": "_self"
+        },
+        {
+            "linkName": "Contact Us",
+            "linkUrl": "https://www.cox.com/business/contact-us.html",
+            "tab": "_self"
+        }
+    ],
+    "AboutUs": [
+        {
+            "linkName": "Newsroom",
+            "linkUrl": "https://newsroom.cox.com/",
+            "tab": "_self"
+        },
+        {
+            "linkName": "Careers",
+            "linkUrl": "https://www.cox.com/aboutus/careers.html",
+            "tab": "_self"
+        },
+        {
+            "linkName": "Diversity",
+            "linkUrl": "https://www.cox.com/aboutus/diversity.html",
+            "tab": "_self"
+        },
+        {
+            "linkName": "Investor Relations",
+            "linkUrl": "https://www.cox.com/aboutus/investor-relations.html",
+            "tab": "_self"
+        }
+    ],
+    "Social": [
+        {
+            "linkName": "YouTube",
+            "linkUrl": "https://www.youtube.com/user/coxbusiness",
+            "tab": "_self"
+        },
+        {
+            "linkName": "Facebook",
+            "linkUrl": "https://www.facebook.com/CoxBusiness",
+            "tab": "_self"
+        },
+        {
+            "linkName": "Twitter",
+            "linkUrl": "https://twitter.com/coxbusiness",
+            "tab": "_self"
+        },
+        {
+            "linkName": "LinkedIn",
+            "linkUrl": "http://www.linkedin.com/company/cox-communications/",
+            "tab": "_self"
+        }
+    ],
+    "Legal": [
+        {
+            "linkName": "Policy / Legal",
+            "linkUrl": "https://www.cox.com/aboutus/policies/online-privacy-policy.html",
+            "tab": "_self"
+        },
+        {
+            "linkName": "FCC Public File",
+            "linkUrl": "https://www.cox.com/residential/fcc-regulatory.html",
+            "tab": "_self"
+        },
+        {
+            "linkName": "About our Ads",
+            "linkUrl": "https://www.cox.com/aboutus/policies/online-privacy-policy.html",
+            "tab": "_self"
+        },
+        {
+            "linkName": "All Pricing and Plans",
+            "linkUrl": "https://www.cox.com/business/pricing.html",
+            "tab": "_self"
+        }
+    ],
+    "Companies": [
+        {
+            "linkName": "Cox Media Group",
+            "linkUrl": "https://coxmedia.com/",
+            "tab": "_self"
+        },
+        {
+            "linkName": "Cox Enterprises",
+            "linkUrl": "https://www.coxenterprises.com/",
+            "tab": "_self"
+        }
+    ],
+    "Partners": [
+        {
+            "linkName": "Business Channel Partner Program",
+            "linkUrl": "https://www.cox.com/business/business-channel-program.html",
+            "tab": "_self"
+        },
+        {
+            "linkName": "Referral Agent",
+            "linkUrl": "https://www.cox.com/business/business-referral-agent.html",
+            "tab": "_self"
+        },
+        {
+            "linkName": "Reseller Agent",
+            "linkUrl": "https://www.cox.com/business/business-reseller-agent.html",
+            "tab": "_self"
+        },
+        {
+            "linkName": "Selling Agent",
+            "linkUrl": "https://www.cox.com/business/business-selling-agent.html",
+            "tab": "_self"
+        },
+        {
+            "linkName": "Wholesalers",
+            "linkUrl": "https://www.cox.com/business/industry-expertise/wholesale-var.html",
+            "tab": "_self"
+        }
+    ],
+    "privacy" : {
+        "linkName": "Privacy",
+        "linkUrl": "https://www.cox.com/aboutus/policies/annual-privacy-notice.html",
+        "tab": "_self"
+    },
+    "ringCentralLoginUrl" : "https://login.ringcentral.com",
+    "footerLinks" : ["Help","About Us","Social","Legal","Companies","Partners"]
+}

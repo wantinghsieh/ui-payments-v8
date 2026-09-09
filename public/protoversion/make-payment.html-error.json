@@ -1,0 +1,29 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "one-time-payment",
+    "templateName": "SetupTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "error",
+        "headerText": "Make a payment",
+        "oktaLogin": true,
+        "navigateTo": "/ibill/home.html",
+        "errorMessages": [
+          "An error occurred while processing your request. Please try later."
+        ]
+      }
+    }
+  }
+}

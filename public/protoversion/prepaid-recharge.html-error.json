@@ -1,0 +1,32 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "prepaid-recharge",
+    "templateName": "PrepaidRechargeTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "headerText": "Make a payment",
+        "pageName": "error",
+        "oktaLogin": true,
+        "alerts": [
+          {
+            "message": "It looks like something went wrong. Please try later or <a href=\"/residential/contactus.html\" class=\"chat-trigger\">chat with us</a> for quick support.",
+            "iconType": "error"
+          }
+        ],
+        "navigateTo": "/resaccount/prepaid-home.html"
+      }
+    }
+  }
+}

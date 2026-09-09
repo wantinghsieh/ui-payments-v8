@@ -1,0 +1,61 @@
+{
+  "udo": {
+    "udo": {
+      "categorySubscribed": [
+        "Internet"
+      ]
+    }
+  },
+  "page": {
+    "pageName": "automatic-payments",
+    "templateName": "EasyPaySetupTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "manage-statement",
+        "headerText": "EasyPay automatic payments",
+        "subTitle": "A safe, automatic, and recurrent payment program that allows you to pay your bill automatically each month.",
+        "pageError": null,
+        "navigateTo": "/ibill/home.html",
+        "customerType": "residential",
+        "oktaLogin": true,
+        "isprepaidCustomer": false,
+        "udoVariables": {
+          "channel": "cox:res:payments",
+          "pageName": "cox:res:payments:automatic-payments-setup",
+          "pageType": "payments",
+          "subSection": "cox:res:payments",
+          "businessUnit": "res:payments",
+          "purchaseStep": "payments",
+          "visitorLoginStatus": "link-based-auth",
+          "amountDue": null,
+          "amountPastDue": null,
+          "amountAttempted": null,
+          "amountPaid": null,
+          "eventNames": null,
+          "selfHelpName": null,
+          "formError": null
+        },
+        "pciChaseEncryptKeyJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/64100000000055/getkey.js",
+        "pciChaseEncryptJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/encryption.js",
+        "easyPayEligibilityError": "",
+        "statements": [
+          {
+            "statementCode": "0232",
+            "name": "Internet, TV, Homelife, Voice",
+            "paymentMethod": "Wells Fargo ending in 6576",
+            "enrolled": true,
+            "expired": false,
+            "wireless": false
+          }
+        ]
+      }
+    }
+  }
+}

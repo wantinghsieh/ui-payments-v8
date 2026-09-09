@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63 (101010) - https://sketch.com -->
+    <title>4E7F52BB-7F79-42C4-B3DC-E0A64C50D5AA</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="14.726044%" y1="14.6804238%" x2="85.2941173%" y2="85.3195762%" id="linearGradient-1">
+            <stop stop-color="#00AAF4" offset="16.34%"></stop>
+            <stop stop-color="#00D258" offset="100%"></stop>
+        </linearGradient>
+        <path d="M9.936,6.312 C10.368,6.312 10.824,6.432 11.208,6.696 L11.208,6.696 L16.416,10.08 C16.44,10.08 16.464,10.104 16.488,10.128 C17.04,10.56 17.352,11.256 17.352,11.976 C17.352,12.696 17.016,13.344 16.464,13.776 C16.44,13.776 16.416,13.8 16.392,13.824 L16.392,13.824 L11.208,17.208 C10.824,17.472 10.416,17.616 9.936,17.616 C8.688,17.616 7.656,16.584 7.656,15.336 L7.656,15.336 L7.656,8.592 C7.656,7.344 8.688,6.312 9.936,6.312 Z M12.024,0.048 C5.472,0.048 0.144,5.376 0.144,11.952 C0.144,18.528 5.472,23.832 12.024,23.832 C18.576,23.832 23.904,18.504 23.904,11.952 C23.904,5.4 18.576,0.048 12.024,0.048 Z M12.024,21.816 C6.576,21.816 2.16,17.4 2.16,11.952 C2.16,6.48 6.576,2.064 12.024,2.064 C17.472,2.064 21.888,6.48 21.888,11.952 C21.888,17.4 17.472,21.816 12.024,21.816 Z" id="path-2"></path>
+        <linearGradient x1="22.892761%" y1="16.8467829%" x2="81.7701602%" y2="82.0326194%" id="linearGradient-4">
+            <stop stop-color="#00AAF4" offset="0%"></stop>
+            <stop stop-color="#022F87" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="App-Voicemail" transform="translate(-329.000000, -248.000000)">
+            <g id="voicemail_play_enabled" transform="translate(329.000000, 248.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+                <g id="Colors/Night-Grey---#202020" mask="url(#mask-3)" fill="url(#linearGradient-4)" fill-rule="nonzero">
+                    <g id="Rectangle-4-Copy">
+                        <rect x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

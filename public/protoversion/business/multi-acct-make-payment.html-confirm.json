@@ -1,0 +1,103 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "one-time-payment",
+    "templateName": "ConfirmTemplate",
+    "displayHeader": false,
+    "displayFooter": false,
+    "displayCbHeader": true,
+    "displayCbFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "sections": {
+      "displayLeftNav": false,
+      "showCBPageHero": true,
+      "payment": {
+        "pageName": "confirm",
+        "headerText": "Make a payment",
+        "oktaLogin": true,
+        "pageError": null,
+        "customerType": "business",
+        "cbHeaderDescription": "View your accounts, payment methods, and make a payment here.",
+        "cbBackLink": "Billing home",
+        "notEligibleforPayment": false,
+        "multiAccount": true,
+        "navigateTo": "https://myaccount-business.qaa1.cox.com/cbma/billingsummary",
+        "prepaid": false,
+        "cbSubHeaderDescription": "Thank you for your payment.",
+        "paymentConfirmDetails": {
+          "paymentStatus" : "success",
+          "messages": {
+            "success": "You're all set. We'll make your payment with the details below.",
+            "failed" : ""
+          },
+          "accountDetails": null,
+          "paymentMethod": {
+            "type": "bank",
+            "cclast4": "Wells Fargo ending in 6576",
+            "paymentProviderId": "102000076"
+          },
+          "billing": {
+            "paymentAmount": "106.31",
+            "paymentDate": "10/28/2025"
+          },
+          "cbPaymentDetails": [
+            {
+              "serviceName": "6601 HAWKINSVILLE RD, Macon, GA 31216 ",
+              "statementDetails": [
+                {
+                  "accountNumber": "0040110101481201",
+                  "accountAlias": "001101481201_alias",
+                  "statement": "HIGH SPEED DATA SERVICES 004-0110-101481201",
+                  "confirmation": null,
+                  "amount": "72.95",
+                  "status": "Succeeded"
+                },
+                {
+                  "accountNumber": "0010110101481201",
+                  "accountAlias": "001101481201_alias",
+                  "statement": "HIGH SPEED DATA SERVICES 001-0110-101481201",
+                  "confirmation": null,
+                  "amount": "440.46",
+                  "status": "Failed"
+                },
+                {
+                  "accountNumber": "0030110101481201",
+                  "accountAlias": "001101481201_alias",
+                  "statement": "HIGH SPEED DATA SERVICES 003-0110-101481201",
+                  "confirmation": null,
+                  "amount": "0.01",
+                  "status": "Succeeded"
+                }
+              ]
+            }
+          ],
+          "paymentDetailsInfo": null,
+          "paymentConfirmMethod": null
+        },
+        "populateMiniSnapshot": {
+          "accountInfo": "0110 101589101",
+          "subscribedServicesAsString": "Internet, TV, Voice",
+          "billingOverview": "/ibill/home.html",
+          "serviceAddress": {
+            "addressLine1": "Apt 15",
+            "addressLine2": "145 Test Test23",
+            "addressLine3": "Macon, GA 31217",
+            "city": "Macon",
+            "state": "GA",
+            "zipCode5": "31217",
+            "zipCode4": "2390"
+          },
+          "services": "/resaccount/home.html",
+          "moveMyService": "/residential/move.html?campcode=account_dropdown_02202023"
+        },
+        "coxAppContent": null
+      }
+    }
+  }
+}

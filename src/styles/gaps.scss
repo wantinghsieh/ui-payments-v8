@@ -1,0 +1,112 @@
+/**
+ * gaps.scss — True gaps that cannot live in app-tokens.scss / globals.scss
+ *
+ * 1. @font-face declarations for the Cera Pro family.
+ *
+ *    Two pieces being bridged here:
+ *      a) The app's existing code references variant names with a space —
+ *         "Cera Regular", "Cera Medium", "Cera Bold" — both directly and as
+ *         fallback strings inside --payments-font-*.
+ *      b) @cox/core-ui8/dist/index.css declares the family as CeraPro
+ *         (no space). @cox/ui-tokens 7.0.19 --font-family-sans also uses
+ *         CeraPro (no space) — so when the residential / business token
+ *         resolves, the browser asks for CeraPro and core-ui8's declaration
+ *         answers correctly.
+ *
+ *    Why this file exists anyway:
+ *      The pre-existing @font-face declarations in globals.scss for
+ *      "Cera Regular", "Cera Bold", "Cera Medium" pointed ONLY to legacy
+ *      .eot URLs which modern Chrome/Firefox/Safari do not load. If the
+ *      --font-family-sans chain ever fell through to those variant names
+ *      (e.g. before the .cox-resi class is set on <html> during the brief
+ *      pre-hydration window, or for any element above .cox-resi), the
+ *      browser would silently fall back to Arial/Helvetica/sans-serif and
+ *      render the wrong font.
+ *
+ *      This file re-declares those variant names with WORKING .otf URLs
+ *      from the modern Cox CDN, and defensively also declares CeraPro
+ *      (which core-ui8 also declares) so the family is available even if
+ *      core-ui8's CSS load timing changes.
+ */
+
+/* ── Spectrum Sans (app base font) ──────────────────────────── */
+
+@font-face {
+    font-display: swap;
+    font-family: 'Spectrum Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://webcdn.cox.com/content/dam/cox/common/ui8/fonts/SpectrumSansVF_W_Wght.woff2) format('woff2'),
+         url('../assets/_fonts/SpectrumSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Spectrum Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://webcdn.cox.com/content/dam/cox/common/ui8/fonts/SpectrumSansVF_W_Wght.woff2) format('woff2'),
+         url('../assets/_fonts/SpectrumSans-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Spectrum Sans';
+    font-style: italic;
+    font-weight: 100 900;
+    src: url(https://webcdn.cox.com/content/dam/cox/common/ui8/fonts/SpectrumSansVF_W_Italics_Wght.woff2) format('woff2');
+}
+
+/* ── Variant names (used as fallback strings inside --payments-font-*) ────── */
+
+@font-face {
+    font-display: swap;
+    font-family: "Cera Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://webcdn.cox.com/content/dam/cox/common/ui8/fonts/CeraPro-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Cera Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://webcdn.cox.com/content/dam/cox/common/ui8/fonts/CeraPro-Medium.otf) format("opentype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Cera Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://webcdn.cox.com/content/dam/cox/common/ui8/fonts/CeraPro-Bold.otf) format("opentype");
+}
+
+/* ── Canonical family name (matches @cox/ui-tokens --font-family-sans and
+       @cox/core-ui8) — defensive duplicate so the family is reachable even
+       if core-ui8's CSS load order changes. ────────────────────────────────── */
+
+@font-face {
+    font-display: swap;
+    font-family: CeraPro;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://webcdn.cox.com/content/dam/cox/common/ui8/fonts/CeraPro-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CeraPro;
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://webcdn.cox.com/content/dam/cox/common/ui8/fonts/CeraPro-Medium.otf) format("opentype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CeraPro;
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://webcdn.cox.com/content/dam/cox/common/ui8/fonts/CeraPro-Bold.otf) format("opentype");
+}

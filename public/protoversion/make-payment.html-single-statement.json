@@ -1,0 +1,36 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "one-time-payment",
+    "templateName": "SetupTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "setup",
+        "headerText": "Make a payment",
+        "oktaLogin": true,
+        "pageError": null,
+        "navigateTo": "/ibill/home.html",
+        "statements": [
+          {
+            "statementCode": "0545",
+            "name": "Internet",
+            "totalBalanceDue": "106.45",
+            "pastDueBalance": "55.25",
+            "selected": true
+          }
+        ]
+      }
+    }
+  }
+}

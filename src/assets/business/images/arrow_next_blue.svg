@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow_next</title>
+    <defs>
+        <linearGradient x1="34.137328%" y1="0%" x2="65.862672%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#002F87" offset="0%"></stop>
+            <stop stop-color="#002F87" offset="100%"></stop>
+        </linearGradient>
+        <path d="M6.2307,5.1952 L1.7347,0.3212 C1.3607,-0.0838 0.7267,-0.1098 0.3207,0.2652 C-0.0833,0.6392 -0.1093,1.2732 0.2647,1.6782 L4.1237,5.8602 L0.3017,9.8402 C-0.0793,10.2372 -0.0663,10.8712 0.3317,11.2532 C0.5197,11.4332 0.7637,11.5322 1.0237,11.5322 L1.0437,11.5322 C1.3117,11.5272 1.5607,11.4172 1.7457,11.2252 L6.2177,6.5662 C6.5837,6.1852 6.5887,5.5832 6.2307,5.1952" id="path-2"></path>
+        <linearGradient x1="22.892761%" y1="16.8467829%" x2="81.7701602%" y2="82.0326194%" id="linearGradient-4">
+            <stop stop-color="#002F87" offset="0%"></stop>
+            <stop stop-color="#002F87" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blueprint-folder" transform="translate(-349.000000, -520.000000)">
+            <g id="Group" transform="translate(340.000000, 514.000000)">
+                <g id="Group" transform="translate(9.000000, 6.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    <g mask="url(#mask-3)" id="Colors/Business-Gradient">
+                        <g transform="translate(-9.000000, -6.000000)">
+                            <rect id="Rectangle-4-Copy" fill="url(#linearGradient-4)" x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="24px" viewBox="0 0 23 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/magnifying-glass</title>
+    <defs>
+        <linearGradient x1="0.0377598634%" y1="0%" x2="99.9622401%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#00AAF4" offset="0%"></stop>
+            <stop stop-color="#022F87" offset="100%"></stop>
+        </linearGradient>
+        <path d="M23.7158491,21.7643774 L16.0639245,14.1124528 C17.2030189,12.6957736 17.8867925,10.8984906 17.8867925,8.94339621 C17.8867925,4.38656601 14.1794717,0.679245236 9.6226415,0.679245236 C5.06581129,0.679245236 1.35849052,4.38656601 1.35849052,8.94339621 C1.35849052,13.5002264 5.06581129,17.2075472 9.6226415,17.2075472 C11.573434,17.2075472 13.3670943,16.526717 14.7821887,15.392151 L22.4352453,23.0452076 C22.6118491,23.2220378 22.8439246,23.3105661 23.0755472,23.3105661 C23.3071699,23.3105661 23.5392453,23.2220378 23.7158491,23.0452076 C24.0697359,22.6915472 24.0697359,22.1180378 23.7158491,21.7643774 Z M9.6226415,15.3962264 C6.06452828,15.3962264 3.16981128,12.5015094 3.16981128,8.94339621 C3.16981128,5.38528299 6.06452828,2.490566 9.6226415,2.490566 C13.1807547,2.490566 16.0754717,5.38528299 16.0754717,8.94339621 C16.0754717,12.5015094 13.1807547,15.3962264 9.6226415,15.3962264 Z" id="path-2"></path>
+        <linearGradient x1="22.892761%" y1="16.8467829%" x2="81.7701602%" y2="82.0326194%" id="linearGradient-4">
+            <stop stop-color="#00AAF4" offset="0%"></stop>
+            <stop stop-color="#022F87" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blueprint-folder" transform="translate(-287.000000, -574.000000)">
+            <g id="Icons/magnifying-glass" transform="translate(286.000000, 574.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Combined-Shape" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <g id="Group" mask="url(#mask-3)" fill="url(#linearGradient-4)">
+                    <g id="Colors/Business-Gradient">
+                        <rect id="Rectangle-4-Copy" x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

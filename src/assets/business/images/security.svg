@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="39px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>5F6B397D-EA69-456E-94FB-3196C8051C71</title>
+    <defs>
+        <linearGradient x1="15.2777778%" y1="0%" x2="84.7222222%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#00AAF4" offset="0%"></stop>
+            <stop stop-color="#022F87" offset="100%"></stop>
+        </linearGradient>
+        <path d="M21.0995261,4.00606061 L12.6161137,0.127272727 C12.2132701,-0.0424242424 11.7630332,-0.0424242424 11.3838863,0.127272727 L2.90047393,4.00606061 C2.35545024,4.24848485 2,4.80606061 2,5.43636364 C2,7.73939394 2.49763033,19.4242424 11.3364929,23.8363636 C11.7630332,24.0545455 12.2369668,24.0545455 12.6635071,23.8363636 L12.6635071,23.8363636 C21.478673,19.4 21.9763033,7.71515152 22,5.41212121 C22,4.80606061 21.6445498,4.24848485 21.0995261,4.00606061 Z M11.9763033,21.9939394 C4.58293839,18.1636364 3.91943128,8.22424242 3.87203791,5.65454545 L11.9763033,1.94545455 L20.0805687,5.65454545 C20.056872,8.22424242 19.3933649,18.1636364 11.9763033,21.9939394 Z" id="path-2"></path>
+        <linearGradient x1="22.892761%" y1="16.8467829%" x2="81.7701602%" y2="82.0326194%" id="linearGradient-4">
+            <stop stop-color="#00AAF4" offset="0%"></stop>
+            <stop stop-color="#022F87" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Voicemail" transform="translate(-549.000000, -203.000000)">
+            <g id="add-service-security" transform="translate(549.000000, 203.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+                <g id="Colors/Night-Grey---#202020" mask="url(#mask-3)" fill="url(#linearGradient-4)">
+                    <rect id="Rectangle-4-Copy" x="0" y="0" width="24" height="24"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

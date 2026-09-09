@@ -1,0 +1,18 @@
+{
+  "udo": {},
+  "page": {
+    "pageName": "paymentError",
+    "templateName": "PaymentErrorTemplate",
+    "displayHeader": false,
+    "displayFooter": false,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "sections": {
+      "paymentError": {
+        "title": "Link no longer active",
+        "errorCode": "UNKNOWN_ERROR",
+        "errorMessage": "There seems to be an issue with your authorization link. Please request a new one from the agent."
+      }
+    }
+  }
+}

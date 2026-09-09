@@ -1,0 +1,68 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "confirm",
+    "templateName": "ExtendPayConfirmTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "confirm",
+        "customerType": "residential",
+        "oktaLogin": true,
+        "headerText": "You've committed to paying",
+        "description": "You will be charged on your monthly payment due date.",
+        "isprepaidCustomer": false,
+        "navigateTo": "/ibill/home.html",
+        "udoVariables": {
+          "channel": "cox:res:payments",
+          "pageName": "cox:res:payments:automatic-payments-setup",
+          "pageType": "payments",
+          "subSection": "cox:res:payments",
+          "businessUnit": "res:payments",
+          "purchaseStep": "payments",
+          "visitorLoginStatus": "link-based-auth",
+          "amountDue": null,
+          "amountPastDue": null,
+          "amountAttempted": null,
+          "amountPaid": null,
+          "eventNames": null,
+          "selfHelpName": null,
+          "formError": null
+        },
+        "paymentConfirmDetails": {
+          "paymentStatus": "success",
+          "messages": {
+            "successMessage": "Thank you, you have until <b>Tuesday, June 21st</b> to make a payment. Your amount due is still subject to any late fees."
+          },
+          "paymentDetailsInfo": {
+            "headerText": "You are all set. Thank you for enrolling in EasyPay.",
+            "description": "You will be charged on your monthly payment due date."
+          },
+          "accountDetails": {
+            "accountNumber": "001 3410 105432101",
+            "serviceAddress": "875 N Michigan Ave, Chicago, IL 60611"
+          },
+          "paymentExtensionDate": {
+            "paymentDate": "03/28/2026"
+          },
+          "paymentDetails": {
+            "totalAmount": "106.31"
+          }
+        },
+        "coxAppContent": {
+          "url": "/content/experience-fragments/cox/residential/react/my_account/support/cox-app-download/cox-app-download-desktop-mobile.model.json"
+        }
+      }
+    }
+  }
+}

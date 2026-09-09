@@ -1,0 +1,80 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "prepaid-recharge",
+    "templateName": "PrepaidRechargeTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "setup-mop",
+        "headerText": "Make a payment",
+        "oktaLogin": true,
+        "hasFullIbillAccess": true,
+        "navigateTo": "/resaccount/prepaid-home.html",
+        "prepaid": true,
+        "pciChaseEncryptKeyJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/64100000000055/getkey.js",
+        "pciChaseEncryptJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/encryption.js",
+        "paymentSetupDetails": {
+          "description": "Your StraightUp Internet service will be renewed for <strong>$50.00</strong>.",
+          "paymentDate": "12/01/2025"
+        },
+        "paymentRestrictions": {
+          "restrictBankPayment": true,
+          "restrictCardPayment": false,
+          "allPaymentRestricted": false
+        },
+        "listOfYears": [
+          "2025",
+          "2026",
+          "2027",
+          "2028",
+          "2029",
+          "2030",
+          "2031",
+          "2032",
+          "2033",
+          "2034",
+          "2035",
+          "2036",
+          "2037",
+          "2038",
+          "2039"
+        ],
+        "savedMop": [
+          {
+            "mopId": "1",
+            "type": "CARD",
+            "name": "Visa ending in 6576",
+            "classType": "visa",
+            "lastFourDigits": "6576",
+            "paymentProviderId": "",
+            "disabled": false,
+            "isDefaultMop": "true",
+            "expiringSoon": false
+          },
+          {
+            "mopId": "2",
+            "type": "CARD",
+            "name": "Mastercard ending in 6463",
+            "classType": "mastercard",
+            "lastFourDigits": "6463",
+            "paymentProviderId": "",
+            "disabled": false,
+            "isDefaultMop": "false",
+            "expiringSoon": false
+          }
+        ]
+      }
+    }
+  }
+}

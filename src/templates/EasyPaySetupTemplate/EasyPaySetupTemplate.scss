@@ -1,0 +1,1081 @@
+form .row {
+  padding: 3px 0 7px 0;
+}
+
+form legend {
+  display: none;
+}
+
+form .error-wrapper {
+  background: var(--pay-color-white);
+  border: 1px solid var(--pay-color-error-alt);
+  display: inline-block;
+  padding: 5px 2px 5px 10px;
+  margin-left: 22px;
+  position: absolute;
+  text-indent: 0;
+  color: var(--pay-color-black);
+  vertical-align: top;
+  min-width: 210px;
+  box-sizing: border-box;
+}
+
+form .bubble-pointer:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 7px 14px 7px 0;
+  border-color: transparent var(--pay-color-error-alt);
+  display: block;
+  width: 0;
+  left: -15px;
+  top: 9px;
+  bottom: auto;
+}
+
+form .bubble-pointer:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 6px 13px 6px 0;
+  border-color: transparent var(--pay-color-bg-error-tooltip);
+  /* error bubble bg */
+  display: block;
+  width: 0;
+  left: -13px;
+  top: 10px;
+  bottom: auto;
+  /* border-color: rgba(245, 199, 199, 0) #fbeeed; */
+}
+
+form.wrap-errors .error-wrapper {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 0;
+  position: relative;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+form.wrap-errors .alert-wrapper {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 0;
+  position: relative;
+  margin-top: 6px;
+}
+
+form.wrap-errors .mbubble-pointer:before {
+  border-style: none;
+  border-width: 0;
+}
+
+form.wrap-errors .mbubble-pointer:after {
+  border-style: none;
+  border-width: 0;
+}
+
+form .errorMsg {
+  color: var(--pay-color-error-alt);
+}
+
+form label.col-content {
+  padding: 3px 0 7px 0 !important;
+  display: block;
+}
+
+form .alert-wrapper p {
+  background: url("https://webcdn.cox.com/ui/7_1/tsw/img/global/icons/alert.png") 0 0 no-repeat;
+  padding: 0 5px 5px 31px;
+  margin-bottom: 0;
+}
+
+form input.error,
+form select.error {
+  border-color: var(--pay-color-error-alt);
+}
+
+::placeholder {
+  color: var(--pay-color-text-placeholder);
+  opacity: 1;
+}
+
+textarea {
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  appearance: none;
+}
+
+textarea [disabled="disabled"] {
+  background-color: var(--pay-color-text-disabled);
+  border: 1px solid var(--pay-color-border);
+}
+
+select {
+  cursor: pointer;
+  border-radius: 0.2em;
+  border: 1px solid var(--pay-color-text-primary);
+  background-color: var(--pay-color-white);
+}
+
+select optgroup {
+  font-family: "Cera Bold", "open_sanssemibold", "Arial", "Helvetica", sans-serif;
+}
+
+select:not([multiple="multiple"]) {
+  height: 34px;
+  padding: 4px 38px 4px 8px;
+  border: 1px solid var(--pay-color-text-primary);
+  outline: 0;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url("../../../public/images/arrow-down-black.svg") no-repeat;
+  background-size: 15px;
+  background-position: right 5% bottom 47%;
+  background-color: var(--pay-color-white);
+}
+
+input[type="radio"] {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  margin: -3px 0 0;
+  padding: 0;
+  outline: 0;
+  opacity: 0;
+}
+
+input[type="text"] {
+  border: 1px solid transparent;
+  padding: 0 10px;
+  line-height: 31px;
+}
+
+input[type="tel"] {
+  border: 1px solid transparent;
+  padding: 0 10px;
+  height: 33px;
+  line-height: 31px;
+}
+
+input[type="email"] {
+  border: 1px solid transparent;
+  padding: 0 10px;
+  height: 33px;
+  line-height: 31px;
+}
+
+input[type="password"] {
+  border: 1px solid transparent;
+  padding: 0 10px;
+  font-family: "open_sanssemibold", "Arial", "Helvetica", sans-serif;
+  height: 33px;
+  line-height: 31px;
+}
+
+input[type="text"][disabled="disabled"] {
+  background-color: var(--pay-color-white);
+  border: 1px solid var(--pay-color-border);
+  color: var(--pay-color-text-disabled);
+}
+
+input[type="tel"][disabled="disabled"] {
+  background-color: var(--pay-color-white);
+  border: 1px solid var(--pay-color-border);
+  color: var(--pay-color-text-disabled);
+}
+
+input[type="email"][disabled="disabled"] {
+  background-color: var(--pay-color-white);
+  border: 1px solid var(--pay-color-border);
+  color: var(--pay-color-text-disabled);
+}
+
+input[type="password"][disabled="disabled"] {
+  background-color: var(--pay-color-white);
+  border: 1px solid var(--pay-color-border);
+  color: var(--pay-color-text-disabled);
+}
+
+select[multiple="multiple"] {
+  padding: 2px 0 2px 8px;
+}
+
+input[type="checkbox"]:not([disabled="disabled"])+label {
+  margin-right: 20px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"]:not([disabled="disabled"])+label:before {
+  background-image: url("../../../public/images/checkbox-default.svg");
+}
+
+input[type="checkbox"]:not([disabled="disabled"])+label span {
+  display: inline-block;
+  width: 90%;
+}
+
+input[type="checkbox"]:hover+label:before {
+  background-image: url("../../../public/images/checkbox-hover.svg");
+}
+
+input[type="checkbox"]:focus+label:before {
+  background-image: url("../../../public/images/checkbox-hover.svg");
+}
+
+input[type="checkbox"]:checked+label:before {
+  background-image: url("../../../public/images/checkbox-checked.svg");
+}
+
+input[type="checkbox"]:disabled+label:before {
+  background-image: url("../../../public/images/checkbox-disabled.svg");
+}
+
+input[type="checkbox"].error+label:before {
+  background-image: url("../../../public/images/checkbox-error.svg");
+}
+
+input[type="radio"]:not([disabled="disabled"])+label {
+  margin-right: 20px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input[type="radio"]:not([disabled="disabled"])+label:before {
+  background-image: url("../../../public/images/radio-default.svg");
+}
+
+input[type="radio"]:not([disabled="disabled"])+label span {
+  display: inline-block;
+}
+
+input[type="radio"]:hover+label:before {
+  background-image: url("../../../public/images/radio-hover.svg");
+}
+
+input[type="radio"]:focus+label:before {
+  background-image: url("../../../public/images/radio-hover.svg");
+}
+
+input[type="radio"]:checked+label:before {
+  background-image: url("https://webcdn.cox.com/ui/mobileshop/tsw/img/checkbox-checked-circle.svg") !important;
+}
+
+input[type="radio"]:disabled+label:before {
+  background-image: url("https://webcdn.cox.com/ui/7_1/tsw/img/global/icons/radio-disabled.svg");
+}
+
+input[type="radio"].error+label:before {
+  background-image: url("https://webcdn.cox.com/ui/residential/7_1/tsw/img/global/icons/radio-error.svg");
+}
+
+.error-header {
+  display: none;
+}
+
+.error-wrapper {
+  display: none;
+}
+
+input[type="button"].sb-button:focus {
+  box-shadow: none;
+}
+
+.sb-input {
+  border-color: var(--pay-color-primary);
+}
+
+.sb-wrapper .sb-input {
+  margin: 0px 10px;
+  // display: block;
+  line-height: 12px;
+  width: 41px;
+  height: 40px;
+  text-align: center;
+  font-family: "Cera Medium", "open_sansbold", "Arial", "Helvetica", sans-serif;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card {
+  border-radius: 14px !important;
+}
+
+.card-default-wrapper {
+  border: 2px solid var(--pay-color-info) !important;
+}
+
+.sb-wrapper .sb-circle-wrapper {
+  background-image: linear-gradient(to bottom, var(--pay-color-white), var(--pay-color-bg-select));
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.59);
+  max-width: 219px;
+  width: calc(100% - 80px);
+  float: left;
+  height: 40px;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.sb-button {
+  display: inline-block;
+  border: 1px solid transparent;
+  color: var(--pay-color-white);
+  // border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-weight: var(--pay-font-weight-bold);
+  margin-top: 2px;
+}
+
+.sb-button.stepper-more:not([disabled="disabled"]) {
+  background: url("https://webcdn.cox.com/ui/7_1/tsw/img/global/icons/stepper-more-active.svg") 0 0 no-repeat;
+  margin-right: 10px;
+}
+
+.sb-button.stepper-less:not([disabled="disabled"]) {
+  background: url("https://webcdn.cox.com/ui/7_1/tsw/img/global/icons/stepper-less-active.svg") 0 0 no-repeat;
+}
+
+.sb-button.stepper-more.disabled {
+  background: url("https://webcdn.cox.com/ui/7_1/tsw/img/global/icons/stepper-more-disabled.svg") 0 0 no-repeat;
+}
+
+.sb-button.stepper-more [disabled="disabled"] {
+  background: url("https://webcdn.cox.com/ui/7_1/tsw/img/global/icons/stepper-more-disabled.svg") 0 0 no-repeat;
+}
+
+.sb-button.stepper-less.disabled {
+  background: url("https://webcdn.cox.com/ui/7_1/tsw/img/global/icons/stepper-less-disabled.svg") 0 0 no-repeat;
+}
+
+.sb-button.stepper-less [disabled="disabled"] {
+  background: url("https://webcdn.cox.com/ui/7_1/tsw/img/global/icons/stepper-less-disabled.svg") 0 0 no-repeat;
+}
+
+.form {
+  overflow: visible !important;
+}
+
+.form .required-asterisk {
+  margin-left: 3px;
+  color: var(--pay-color-error-alt);
+}
+
+.form .large-content-label {
+  height: 0;
+}
+
+.form [class*="colspan-"] {
+  margin-bottom: 10px;
+  float: left;
+}
+
+.form .clear-float {
+  clear: both;
+}
+
+.form label[class*="colspan-"] {
+  padding: 3px 0 7px;
+}
+
+.form span[class*="colspan-"] {
+  padding: 3px 0 7px;
+}
+
+.form .msg-error {
+  color: var(--pay-color-error-alt);
+}
+
+.form-container {
+  overflow: visible !important;
+  margin-bottom: 30px;
+}
+
+.form-container [class*="colspan-"] {
+  margin-bottom: 10px;
+  float: left;
+}
+
+.password-field-wrapper {
+  position: relative;
+}
+
+.password-field-wrapper input+.password-eye {
+  position: absolute;
+  top: 0;
+  width: 23px;
+  height: 25px;
+  margin-left: -40px;
+  margin-top: 5px;
+  cursor: pointer;
+  background-color: var(--pay-color-white);
+  z-index: 2;
+  display: inline-block;
+  border: none;
+}
+
+.password-field-wrapper input[type="password"]+.password-eye {
+  background: url("https://webcdn.cox.com/ui/7_1/tsw/img/global/icons/password-hide.svg") no-repeat 0 0;
+}
+
+.password-field-wrapper input[type="text"]+.password-eye {
+  background: url("https://webcdn.cox.com/ui/7_1/tsw/img/global/icons/password-show.svg") no-repeat 0 0;
+  background-position-y: center;
+}
+
+.password-field-wrapper input[style*="background-image"].password+.password-eye {
+  right: 20px;
+}
+
+.tooltip-icon {
+  display: inline-block;
+  background: url("../../../public/images/tooltip-default.svg") no-repeat 0 0;
+  margin: 10px 0px -5px 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  zoom: 1;
+  position: relative;
+  font-size: 0;
+
+}
+
+.tooltip-div {
+  display: inline;
+}
+
+.easy-pay input[type="radio"]:disabled~span.saved-mop-details-image:before {
+  top: 40%;
+}
+
+@media screen and (min-width: 767px) {
+
+  .payment-continue-btn,
+  .payment-submit-btn {
+    .button {
+      padding: 0;
+
+      .button-base {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  form .error-wrapper {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 0;
+    position: relative;
+    margin-top: 6px;
+    width: 100%;
+  }
+
+  form .mbubble-pointer:before {
+    border-style: none;
+    border-width: 0;
+  }
+
+  form .mbubble-pointer:after {
+    border-style: none;
+    border-width: 0;
+  }
+
+  form .has-help {
+    width: calc(100% - 30px);
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  input[type="tel"] {
+    width: 100%;
+  }
+
+  input[type="email"] {
+    width: 100%;
+  }
+
+  input[type="password"] {
+    width: 100%;
+  }
+
+  input[name="calendar-input-start"] {
+    width: auto;
+  }
+
+  input[name="calendar-input-end"] {
+    width: auto;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .password-field-wrapper input+.password-eye {
+    right: 7px;
+  }
+
+  .button,
+  .btn-primary,
+  a.btn-primary,
+  a.btn-tertiary {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .easy-pay #cvvNumber {
+    width: 40% !important;
+  }
+
+  .easy-pay .link-style-device {
+    white-space: pre-wrap;
+  }
+
+  .easy-pay .input-with-tooltip.card-number {
+    width: 82% !important;
+  }
+
+  .easy-pay .year-select {
+    margin-left: 3px;
+  }
+
+  .easy-pay .year-select .error-wrapper {
+    margin-left: -15px;
+  }
+
+  .saved-mop-details {
+    display: block !important;
+  }
+
+  .payment-container .saved-mop-details-image:before {
+    top: 38% !important;
+  }
+
+  .badge-default-container {
+    padding-left: 0 !important;
+  }
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .easy-pay a.cvv-number-tooltip {
+    margin-left: 8px;
+  }
+}
+
+@media (min-width: 845px) and (max-width: 960px) {
+  .easy-pay a.card-numb-tooltip {
+    margin-left: 15px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .SF .sb-wrapper .sb-circle {
+    padding: 5px 5px 6px 7px;
+  }
+
+  .payment-container .card-number {
+    width: 82% !important;
+  }
+
+  .payment-container #cvv-number {
+    width: 40px !important;
+  }
+
+  .easy-pay a.card-numb-tooltip {
+    left: 82%;
+  }
+
+  .payment-container.chat-payment a.cvv-number-tooltip {
+    left: 40% !important;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .easy-pay .cvv-mobile {
+    padding: 0px 12px !important;
+    margin-left: 21%;
+  }
+
+  .easy-pay #cardNumber {
+    width: 134%;
+  }
+
+  .easy-pay .country-tooltip {
+    top: 2px;
+  }
+
+  .easy-pay .zip-mobile .error-wrapper {
+    margin-left: 45px;
+  }
+
+  .easy-pay .cvv-container .error-wrapper p,
+  .easy-pay .month-select .error-wrapper p {
+    width: 75%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 575px) {
+  // .easy-pay #cardNumber {
+  //   width: 250px !important;
+  // }
+}
+
+#CQ .x-form-text {
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: inherit;
+}
+
+#CQ .x-fieldset legend {
+  display: block;
+}
+
+#CQ textarea.x-form-field {
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: inherit;
+}
+
+#CQ .x-html-editor-wrap select {
+  background-image: none;
+}
+
+#CQ .x-form-check-wrap label:before {
+  width: auto;
+  height: auto;
+  margin: 0;
+  background-image: none;
+}
+
+.IE select:not([multiple="multiple"]) {
+  padding-right: 6px;
+}
+
+.IE9 form .error-wrapper {
+  vertical-align: baseline;
+}
+
+#lpChat select {
+  appearance: menulist;
+}
+
+#lpChat input[type="checkbox"]+label:before {
+  display: none;
+}
+
+#lpChat input[type="radio"]+label:before {
+  display: none;
+}
+
+.disabled-label {
+  color: var(--pay-color-text-disabled);
+}
+
+.text-aligner-span {
+  display: inline-block;
+  width: 79%;
+}
+
+.saved-mop-details {
+  display: flex;
+  align-items: baseline;
+  margin-left: 6px;
+  vertical-align: middle;
+  padding-left: 42px;
+  position: relative;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+  }
+
+  .badge-default-container {
+    padding-left: 20px;
+  }
+}
+
+.payment-container .saved-mop-details-image {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 34%;
+  left: 58px;
+}
+
+.saved-mop-details-image.visa:before {
+  background-position: 0% -166px;
+}
+
+.saved-mop-details-image.discover:before {
+  background-position: 0% 2px;
+}
+
+.saved-mop-details-image.americanexpress:before {
+  background-position: 0% -85px;
+}
+
+.saved-mop-details-image.mastercard:before {
+  background-position: 0% -236px;
+}
+
+.saved-mop-details-image.ATM:before {
+  background-position: 0% 152px;
+}
+
+.saved-mop-details-image.bank:before {
+  content: "";
+  background-image: url("../../../public/images/bankimage.png") !important;
+  position: absolute;
+  top: 34%;
+  left: 60px;
+  background-repeat: no-repeat;
+}
+
+.payment-container .add-new-payment a:before {
+  content: "";
+  background-image: url("../../../public/images/mepe_plus.png");
+  background-repeat: no-repeat;
+  background-position: 10px;
+  display: inline-block;
+  width: 41px;
+  height: 30px;
+  margin-right: 13px;
+  margin-left: -10px;
+  vertical-align: middle;
+}
+
+.saved-mop-details>span {
+  display: block;
+  white-space: pre-wrap;
+  top: -4px;
+  position: relative;
+  left: -4px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.paymentsection-margin {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  select:not([multiple="multiple"]) {
+    padding-right: 6px;
+  }
+
+  input::-ms-clear,
+  input::-ms-reveal {
+    display: none;
+  }
+
+  ::placeholder {
+    color: var(--pay-color-text-placeholder) !important;
+    opacity: 1 !important;
+  }
+
+  form .error-wrapper p {
+    background: url("https://webcdn.cox.com/ui/7_1/tsw/img/global/icons/alert-error.png") 0 0 no-repeat;
+    padding: 0 5px 5px 31px;
+  }
+
+  form .alert-wrapper p {
+    background: url("https://webcdn.cox.com/ui/7_1/tsw/img/global/icons/alert-error.png") 0 0 no-repeat;
+    padding: 0 5px 5px 31px;
+  }
+}
+
+#container {
+  // position: static;
+  min-height: initial;
+  position: relative;
+  text-align: left;
+}
+
+.form-text {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.form-row>.col,
+.form-row>[class*="col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+}
+
+.form-check-input {
+  position: absolute;
+  margin-top: 0.3rem;
+  margin-left: -1.25rem;
+}
+
+.form-check-input:disabled~.form-check-label {
+  color: var(--pay-color-text-subtle);
+}
+
+.form-check-label {
+  margin-bottom: 0;
+}
+
+.form-check-inline {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0;
+  margin-right: 0.75rem;
+}
+
+.form-check-inline .form-check-input {
+  position: static;
+  margin-top: 0;
+  margin-right: 0.3125rem;
+  margin-left: 0;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+textarea {
+  border-radius: 3px;
+  border: 1px solid var(--pay-color-black);
+  background-color: var(--pay-color-white);
+}
+
+.IE8 input[type="text"],
+.IE8 input[type="tel"],
+.IE8 input[type="email"],
+.IE8 input[type="password"],
+.IE8 textarea {
+  border-color: var(--pay-color-ie8-select-border-top) var(--pay-color-ie8-select-border-side) var(--pay-color-ie8-select-border-bot);
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: var(--pay-color-white);
+}
+
+.card-number-wrapper {
+  margin-bottom: 3rem;
+}
+
+input[type="text"]:focus:not([disabled="disabled"]):not([disabled="disabled"]) {
+  border-color: var(--pay-color-field-focus);
+}
+
+input[type="text"]:hover:not([disabled="disabled"]) {
+  border-color: var(--pay-business-hover-border);
+}
+
+input[type="tel"]:focus:not([disabled="disabled"]) {
+  border-color: var(--pay-color-field-focus);
+}
+
+input[type="tel"]:hover:not([disabled="disabled"]) {
+  border-color: var(--pay-business-hover-border);
+}
+
+input[type="email"]:focus:not([disabled="disabled"]) {
+  border-color: var(--pay-color-field-focus);
+}
+
+input[type="email"]:hover:not([disabled="disabled"]) {
+  border-color: var(--pay-business-hover-border);
+}
+
+input[type="password"]:focus:not([disabled="disabled"]) {
+  border-color: var(--pay-color-field-focus);
+}
+
+input[type="password"]:hover:not([disabled="disabled"]) {
+  border-color: var(--pay-business-hover-border);
+}
+
+.IE8 input[type="text"] {
+  height: 31px;
+}
+
+.IE8 input[type="tel"] {
+  height: 31px;
+}
+
+.IE8 input[type="email"] {
+  height: 31px;
+}
+
+.IE8 input[type="password"] {
+  height: 31px;
+}
+
+.IE8 select {
+  padding: 6px 8px 7px;
+  background-color: var(--pay-color-bg-select);
+  border-color: var(--pay-color-ie8-select-border-top) var(--pay-color-ie8-select-border-side) var(--pay-color-ie8-select-border-bot);
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+textarea:focus:not([disabled="disabled"]) {
+  border-color: var(--pay-color-field-focus);
+}
+
+textarea:hover:not([disabled="disabled"]) {
+  border-color: var(--pay-business-hover-border);
+}
+
+select:focus:not([disabled="disabled"]) {
+  border-color: var(--pay-color-field-focus);
+}
+
+select:hover:not([disabled="disabled"]) {
+  border-color: var(--pay-business-hover-border);
+}
+
+.btn-primary,
+.btn-payment,
+.btn-success,
+.btn-disabled,
+.btn-primary-disabled,
+.btn-secondary,
+.btn-tertiary,
+.btn-dark,
+.btn-transactional,
+.btn-primary-oncolor-dark-background,
+.btn-secondary-disabled,
+.btn-transactional-disabled,
+.btn-primary-oncolor-dark-background-disabled,
+.btn-tertiary-disabled {
+  font-family: "Cera Medium", "open_sanssemibold", "Arial", "Helvetica", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--pay-color-white);
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0);
+  min-height: 48px;
+  padding: 10px 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 160px;
+  max-width: 300px;
+  background-size: 24px 24px;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  line-height: normal;
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.cox-mobile-protection-container .cox-mobile-protection a img.icon-right-arrow {
+  padding-right: 15px;
+  width: 25px;
+  height: 10px;
+  vertical-align: inherit;
+}
+
+.cox-mobile-protection-container .cox-mobile-protection .btn-container a {
+  width: 200px;
+}
+
+// Fix for the href="javascript:void(0)" warning
+.add-payment-method {
+  cursor: pointer;
+  text-decoration: underline !important;
+  color: var(--pay-color-primary) !important;
+}
+
+.add-payment-method:hover {
+  text-decoration: none !important;
+}
+
+// Widen the button so the label isn't cramped.
+.button-text {
+  padding: 0 24px;
+}
+
+.payment-container {
+  ul {
+    padding-left: 0;
+  }
+}
+
+.alerts-wrapper {
+  margin: 24px 0;
+}
+
+#easy-pay-setup .button {
+  padding: 10px 0px !important;
+}
+
+#easy-pay-setup .button-group {
+  display: flex;
+  margin: 0px;
+  padding-top: 24px;
+  gap: 1.25rem;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .easy-pay .cvv-mobile {
+    left: 16%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .saved-mop-details-image.bank:before {
+    top: 38%;
+  }
+}
+
+@media only screen and (max-width: 731px) {
+  #easy-pay-setup .chat-payment .payment-submit-btn {
+    margin: 0px;
+  }
+
+  .button .button-base {
+    display: inline !important;
+  }
+}

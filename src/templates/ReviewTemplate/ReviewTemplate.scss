@@ -1,0 +1,182 @@
+.review-heading {
+  font-size: 1.875em;
+  text-align: center;
+}
+
+.review-heading-text {
+  line-height: 1.25em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.subheading-payment-details { font-size: 1.5em; text-align: left; margin-bottom: 0; }
+.subheading-optional-section { font-size: 1.5em; }
+
+.review-submit-button { width: 100% !important; display: block !important; margin-left: 139px; }
+.review-back-button { margin-top: 10px; width: 100% !important; }
+.saved-mop-container { padding-left: 15px; }
+.align-payment-section { margin-left: 100px; }
+
+.easy-pay-checkbox,
+.paperless-checkbox,
+.one-time-review { margin-left: 20px; }
+
+.accnt-details-size { font-size: 0.875em; }
+.easy-pay-warning { margin-right: 20px; }
+.payment-review-details-wrapper { margin: auto; width: 235px !important; }
+
+.calendar-image {
+  background-image: url("https://webcdn.cox.com/ui/mybill/tsw_7/img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 35px 1px;
+  padding-left: 0;
+  background-size: auto;
+  display: inline;
+}
+
+.leaf-image {
+  background-image: url("https://webcdn.cox.com/ui/mybill/tsw_7/img/leaf.svg");
+  background-repeat: no-repeat;
+  background-position: 33px 2px;
+  padding-left: 0;
+  display: inline;
+}
+
+input[type="checkbox"]:not([disabled="disabled"]) + label { margin-bottom: 20px; }
+
+input[type="checkbox"]:not([disabled="disabled"]) + label.calendar-image:before,
+label.leaf-image:before { margin-right: 40px !important; }
+
+input[type="checkbox"]:not([disabled="disabled"]) + label.calendar-image span,
+label.leaf-image span { margin-top: -3px; width: 80% !important; display: inline; }
+
+.center-content { margin: auto; }
+.seprator { margin-top: -18px; }
+.service-address { margin-left: 125px; }
+.align-long-text { width: 74%; }
+
+#container input.review-submit-button.loading-wrapper-active[type="submit"] { width: 100% !important; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  input[type="checkbox"]:not([disabled="disabled"]) + label.calendar-image span {
+    margin-top: -3px;
+    width: 67.5% !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .review-back-button { margin-top: 10px; }
+  .review-submit-button { margin-left: 0; display: unset !important; }
+  .calendar-image { background-position: 35px 0; }
+  .leaf-image { background-position: 32px 1px; }
+
+  input[type="checkbox"]:not([disabled="disabled"]) + label.calendar-image span {
+    margin-top: -3px;
+    width: 75% !important;
+  }
+
+  input[type="checkbox"]:not([disabled="disabled"]) + label.leaf-image span {
+    margin-top: -3px;
+    width: 75% !important;
+    word-break: break-word;
+  }
+
+  .one-time-review span { margin-top: -3px; }
+  .align-payment-section { margin-left: 75px; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  input[type="checkbox"]:not([disabled="disabled"]) + label.calendar-image span,
+  label.leaf-image span { margin-top: 0; width: 80% !important; }
+
+  .service-address { margin-left: 0; }
+  .review-submit-button { margin-left: 0; display: unset !important; }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+  .review-submit-button { margin-left: 0 !important; display: unset !important; }
+}
+
+form.wrap-errors .error-wrapper {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 0;
+  position: relative;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+.errorLabel { color: var(--pay-color-error-alt); }
+
+.btn-tertiary,
+input.btn-tertiary[type="submit"],
+a.btn-tertiary {
+  color: var(--pay-color-black);
+  border: 2px solid var(--pay-color-primary);
+  background-color: var(--pay-color-white);
+  border-radius: var(--pay-radius-pill);
+  background-size: 24px 24px;
+}
+
+#link-activate-device { margin: 0 5px; }
+
+.review-buttons {
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+  .button {
+    display: block !important;
+    width: 100% !important;
+    margin-left: 145px;
+    min-width: 160px;
+    padding: 0 !important;
+
+    .button-base {
+      width: 100%;
+      font-family: var(--pay-font-medium);
+      font-size: 1em;
+      font-weight: var(--pay-font-weight-medium);
+    }
+  }
+}
+
+.review-buttons-back {
+  .button {
+    display: block !important;
+    width: 100% !important;
+    margin-left: 145px;
+    margin-bottom: 28px;
+    margin-top: -22px;
+    min-width: 160px;
+    padding: 0 !important;
+
+    .button-base {
+      width: 100%;
+      font-family: var(--pay-font-medium);
+      font-size: 1em;
+      font-weight: var(--pay-font-weight-medium);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .review-buttons .button { margin-left: 0; min-width: 100%; }
+  .review-buttons-back .button { margin-left: 0; min-width: 100%; }
+}
+
+.modal-footer {
+  .button-base {
+    font-family: var(--pay-font-medium);
+    font-size: 1em !important;
+    font-weight: var(--pay-font-weight-medium) !important;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .modal-one-time-payment {
+    width: 800px !important;
+    overflow-x: hidden !important;
+    .modal-footer { justify-content: right; }
+  }
+}

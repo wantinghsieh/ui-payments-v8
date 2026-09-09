@@ -1,0 +1,24 @@
+{
+  "page": {
+    "pageName": "add-payment-method",
+    "templateName": "AddPaymentMethodTemplate",
+    "displayHeader": false,
+    "displayFooter": false,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "sections": {
+      "payment": {
+        "pageName": "landing-page",
+        "headerText": "Add payment method",
+        "subHeaderText": "Payment methods",
+        "descriptionText": "How would you like to pay?",
+        "customerType": "residential",
+        "pciChaseEncryptKeyJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/64100000000055/getkey.js",
+        "pciChaseEncryptJs": "https://safetechpageencryptionvar.chasepaymentech.com/pie/v1/encryption.js",
+        "trustlyJs": "https://sandbox.trustly.one/start/scripts/trustly.js?accessId=",
+        "trustlyWidgetProps": {},
+        "showResponse": false
+      }
+    }
+  }
+}

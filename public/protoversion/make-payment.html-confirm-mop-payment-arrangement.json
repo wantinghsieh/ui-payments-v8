@@ -1,0 +1,62 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "one-time-payment",
+    "templateName": "ConfirmTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "confirm",
+        "oktaLogin": true,
+        "headerText": "Thank you for your payment.",
+        "notEligibleforPayment": false,
+        "navigateTo": "/ibill/home.html",
+        "prepaid": false,
+        "paymentConfirmDetails": {
+          "paymentStatus": "success",
+          "paymentArrangementText": "Need to cancel this scheduled payment? Visit the <a href='/ibill/transaction-history.html'>Transcation History</a> page at any time before the date of your scheduled payment.",
+          "messages": {
+            "success": "You're all set. We'll make your payment with the details below."
+          },
+          "accountDetails": {
+            "accountNumber": "001 3410 105432101",
+            "serviceAddress": "875 N Michigan Ave, Chicago, IL, 60611"
+          },
+          "paymentMethod": {
+            "type": "bank",
+            "cclast4": "Wells Fargo ending in 6576",
+            "paymentProviderId": "102000076"
+          },
+          "billing": {
+            "paymentAmount": "55.06",
+            "paymentDate": "10/28/2025"
+          },
+          "paymentDetails": [
+            {
+              "statementCode": "001",
+              "serviceName": "Internet",
+              "totalAmount": "55.06",
+              "confirmation": "ABSDIDKDIFIDL",
+              "status": "Succeeded"
+            }
+          ],
+          "paymentDetailsInfo": null,
+          "paymentConfirmMethod": null
+        },
+        "coxAppContent": {
+          "url": "/content/experience-fragments/cox/residential/react/my_account/support/cox-app-download/cox-app-download-desktop-mobile.model.json"
+        }
+      }
+    }
+  }
+}

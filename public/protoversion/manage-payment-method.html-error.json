@@ -1,0 +1,30 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "manage-payment-method",
+    "templateName": "ManagePaymentMethodTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "chatContent": "Care",
+    "displayChat": true,
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "error",
+        "headerText": "Manage payment methods",
+        "navigateTo": "/mybill/home.html",
+        "customerType": "residential",
+        "oktaLogin": true,
+        "errorMessages": [
+          "It looks like something went wrong. Please try later or <a href=\"/residential/contactus.html\" class=\"chat-trigger\">chat with us</a> for quick support."
+        ]
+      }
+    }
+  }
+}

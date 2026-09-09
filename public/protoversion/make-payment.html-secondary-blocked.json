@@ -1,0 +1,30 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "one-time-payment",
+    "templateName": "SetupTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "error",
+        "bannerType": "info",
+        "headerText": "Make a payment",
+        "oktaLogin": true,
+        "navigateTo": "/ibill/home.html",
+        "errorMessages": [
+          "Only primary account holders can make changes here for security reasons. You're logged in as a secondary user <strong>mobile.id1.sec1</strong>.<br/><br/>Please <a href=\"https://www.one.qa.cox.com/authres/logout?onsuccess=https://www.one.qa.cox.com/webapi/cdncache/cookieset?resource=https://www.one.qa.cox.com/mybill/home.html\">log in</a> using your primary User ID to make changes:<ul><li><a href=\"/myprofile/forgot-userid.html\">Look up your primary User ID</a></li><li>Learn more about <a href=\"/residential/support/understanding-digital-identities-and-account-types.html\">User ID Account Types</a></li></ul>"
+        ]
+      }
+    }
+  }
+}

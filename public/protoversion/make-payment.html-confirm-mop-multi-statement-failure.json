@@ -1,0 +1,65 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "one-time-payment",
+    "templateName": "ConfirmTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "confirm",
+        "oktaLogin": true,
+        "headerText": "Payment failed",
+        "notEligibleforPayment": false,
+        "navigateTo": "/ibill/home.html",
+        "prepaid": false,
+        "paymentConfirmDetails": {
+          "paymentStatus": "failed",
+          "messages": {
+            "failed": "<p>Sorry, we were unable to process your payment. Please check your payment details below and try again.</p>",
+            "linkText": "Contact us",
+            "linkUrl": "/residential/contactus.html"
+          },
+          "accountDetails": {
+            "accountNumber": "001 3410 105432",
+            "serviceAddress": "875 N Michigan Ave, Chicago, IL, 60611"
+          },
+          "paymentMethod": {
+            "type": "bank",
+            "cclast4": "Wells Fargo ending in 6576",
+            "paymentProviderId": "102000076"
+          },
+          "billing": {
+            "paymentAmount": "106.31",
+            "paymentDate": "10/28/2025"
+          },
+          "paymentDetails": [
+            {
+              "statementCode": "001",
+              "serviceName": "Internet",
+              "totalAmount": "55.06",
+              "status": "Failed"
+            },
+            {
+              "statementCode": "002",
+              "serviceName": "Cox Mobile",
+              "totalAmount": "51.25",
+              "status": "Failed"
+            }
+          ],
+          "paymentDetailsInfo": null,
+          "paymentConfirmMethod": null
+        }
+      }
+    }
+  }
+}

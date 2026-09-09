@@ -1,0 +1,36 @@
+{
+  "udo": {
+    "categorySubscribed": [
+      "Internet"
+    ]
+  },
+  "page": {
+    "pageName": "prepaid-automatic-recharge",
+    "templateName": "PrepaidAutomaticRechargeTemplate",
+    "displayHeader": true,
+    "displayFooter": true,
+    "minimalHeader": false,
+    "minimalFooter": false,
+    "displayChat": true,
+    "chatContent": "Care",
+    "sections": {
+      "displayLeftNav": true,
+      "payment": {
+        "pageName": "easyPay-statements",
+        "headerText": "EasyPay automatic payments",
+        "subTitle": "A safe, automatic, and recurrent payment program that allows you to pay your bill automatically each month.",
+        "navigateTo": "/resaccount/prepaid-home.html",
+        "oktaLogin": true,
+        "isprepaidCustomer": true,
+        "statements": [
+          {
+            "statementCode": "001",
+            "name": "StraightUp Internet",
+            "paymentMethod": "Visa ending in 6576",
+            "enrolled": true
+          }
+        ]
+      }
+    }
+  }
+}

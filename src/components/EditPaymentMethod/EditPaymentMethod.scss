@@ -1,0 +1,30 @@
+// core-ui8 applies the passed className to the field wrapper div; Bootstrap's
+// form-control then adds border/padding/background to that wrapper causing double-styling.
+.credit-card-container .name-on-cc.form-control,
+.credit-card-container .countryZip.form-control {
+    border: none;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.modal-body {
+    .modal-heading-title {
+        h2 {
+            font-weight: var(--pay-font-weight-bold);
+            margin-bottom: 1rem;
+        }
+    }
+
+    #form {
+        .form-options-checkbox .form-check-label {
+            margin-left: 0px !important;
+            margin-bottom: 0px !important;
+        }
+
+        .form-footer {
+            align-items: center !important;
+        }
+    }
+}

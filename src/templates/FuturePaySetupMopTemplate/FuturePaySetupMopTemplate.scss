@@ -1,0 +1,22 @@
+.future-date-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 0;
+
+  .input-group.responsive-size { width: fit-content; }
+
+  .future-datepicker-header {
+    color: var(--pay-color-text-primary);
+    font-size: var(--pay-font-size-lg);
+    font-weight: var(--pay-font-weight-medium);
+    line-height: 22px;
+    letter-spacing: -0.4px;
+  }
+
+  .form-label { margin-bottom: 0.5rem !important; }
+
+  .date-picker { padding-right: 0; }
+
+  .date-picker input[type="text"] { border-radius: 15px; }
+}

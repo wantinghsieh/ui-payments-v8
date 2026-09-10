@@ -1,31 +1,42 @@
+// Extracted from src/styles/globals.scss — the rules matching the class names
+// referenced by src/components/widgets/stepindicator/stepindicator.tsx
+// (.step-indicator, span.pending-step, .col-4:not(:last-child) span:after,
+// and the ancestor .payment-container h1 rule that centers its <h1>).
+//
+// stepindicator.tsx itself contains no CSS (no inline styles / styled-jsx) —
+// only Bootstrap utility classNames ("row", "col-12", "col-4", "my-3") plus
+// these custom classes, which are the only ones with real repo-owned rules.
+
 .payment-container h1 { text-align: center; }
 
 .step-indicator {
   text-align: center;
-  margin-top: 20px;
+  margin-top: var(--space-250); // 20px
 
   span {
-    font-size: var(--pay-font-size-md);
-    font-family: var(--pay-font-medium);
+    font-size: var(--font-size-300);
+    font-family: var(--payments-font-medium);
     text-align: center;
-    color: var(--pay-color-primary);
+    color: var(--color-blue-700);
 
-    &.pending-step { color: var(--pay-color-text-muted); }
+    &.pending-step { color: var(--color-neutral-600); }
   }
 
   .col-4:not(:last-child) span:after {
     content: "\203A";
-    right: 5%;
-    top: -1px;
-    font-size: 18px;
+    right: 35%;
+    top: -1px; /* structural raw — 1px nudge */
+    font-size: var(--font-size-500); // 18px
     position: absolute;
   }
 }
+
+.step-indicator .col-4:not(:last-child) span:after { right: 5%; }
 
 @media screen and (max-width: 767px) {
   .step-indicator .col-4:not(:last-child) span:after { right: 3%; }
 }
 
 @media screen and (max-width: 320px) {
-  .step-indicator { margin-left: -10px; }
+  .step-indicator { margin-left: calc(-1 * var(--payments-space-2)); } // -10px
 }

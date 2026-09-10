@@ -112,6 +112,18 @@ in-place: bootstrap → core-ui8 `index.css` (so core-ui8 tokens win the cascade
   fallback order (bank+providerId → generic bank icon → card classType SVG → type-as-brand SVG →
   generic bank icon); read its doc comment before changing icon resolution logic.
 
+## Rendering server-provided HTML
+
+Several payload fields (error messages, disclosures, review-page fine print) are HTML strings from
+the backend, not plain text. They must go through `DOMPurify.sanitize()` before
+`dangerouslySetInnerHTML` — never render a raw payload string as HTML directly. Prefer the shared
+`src/components/common/SanitizedHtml` component (`html`/`as`/`className` props) for new code; several
+older templates (`SetupTemplate`, `ConfirmTemplate`, `ConfirmMopTemplate`, `ReviewMopTemplate`,
+`EasyPayReviewTemplate`, `ExtendPayReviewTemplate`, `FuturePayReviewTemplate`, `PaymentAmount`,
+`WarningAlertWithViewMore`) still inline the
+`dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(...) }}` idiom directly — match that pattern
+there rather than mixing approaches in the same file.
+
 ## Storybook
 
 `src/stories/*.mdx` document each flow against static fixtures in `src/stories/data/`, used for

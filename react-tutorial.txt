@@ -22,7 +22,15 @@ c:\tmp\stepindicator-spec.md
 > if I ask claude to generate src\components\widgets\stepindicator\stepindicator.tsx, please write the spec to
   c:\tmp\stepindicator-spec.md. Not generate tsx yet
   
+// 
 1. Pretend src\components\widgets\stepindicator\stepindicator.tsx not existed
 2. claude to generate src\components\widgets\stepindicator\stepindicator.tsx from scratch. 
 3. write the spec to c:\tmp\stepindicator-spec.md.
 4. Not generate tsx yet
+
+//get the css 1st
+extract all CSS form src\components\widgets\stepindicator\stepindicator.tsx and write to c:\tmp\stepindicator.scss
+copy c:\tmp\stepindicator.scss to *** manually 
+//
+1. assume src\components\widgets\stepindicator\stepindicator.tsx not existed
+2. generate skepton only src\components\widgets\stepindicator\stepindicator.tsx using src\components\widgets\stepindicator\stepindicator.scss

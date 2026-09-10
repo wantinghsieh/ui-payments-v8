@@ -22,19 +22,25 @@ const StepIndicator = ({
     <>
       <div className="row">
         <div className="col-12">
-          <h1>{/* TODO: render headerText */}</h1>
+          <h1>{headerText}</h1>
         </div>
       </div>
 
       <div className="row step-indicator my-3">
         <div className="col-4">
-          <span>{/* TODO: render firstStep.title, "pending-step" class when !firstStep.default */}</span>
+          <span className={firstStep.default ? "" : "pending-step"}>
+            1. {firstStep.title}
+          </span>
         </div>
         <div className="col-4">
-          <span>{/* TODO: render secondStep.title, "pending-step" class when !secondStep.default */}</span>
+          <span className={secondStep.default ? "" : "pending-step"}>
+            2. {secondStep.title}
+          </span>
         </div>
         <div className="col-4">
-          <span>{/* TODO: render thirdStep.title, "pending-step" class when !thirdStep.default */}</span>
+          <span className={thirdStep.default ? "" : "pending-step"}>
+            3. {thirdStep.title}
+          </span>
         </div>
       </div>
     </>

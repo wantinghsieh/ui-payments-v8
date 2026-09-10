@@ -30,7 +30,8 @@ c:\tmp\stepindicator-spec.md
 
 //get the css 1st
 extract all CSS form src\components\widgets\stepindicator\stepindicator.tsx and write to c:\tmp\stepindicator.scss
-copy c:\tmp\stepindicator.scss to *** manually 
+- copy c:\tmp\stepindicator.scss to src\components\widgets\stepindicator\stepindicator.scss *** manually 
+- src\components\widgets\stepindicator\stepindicator.scss is NOT used, it used as learning purpose, because its content alreay in global.scss
 //
 1. assume src\components\widgets\stepindicator\stepindicator.tsx not existed
 2. generate skepton only src\components\widgets\stepindicator\stepindicator.tsx using src\components\widgets\stepindicator\stepindicator.scss
